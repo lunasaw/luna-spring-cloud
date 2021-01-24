@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="luna-provider-payment-node-IIII" />
+        <module name="luna-provider-zookeeper-node" />
+        <module name="luna-consumer-eureka-node-I" />
+        <module name="luna-eureka-server-node-I" />
+        <module name="luna-provider-consul-node" />
+        <module name="luna-eureka-server-node-II" />
+        <module name="luna-provider-eureka-node-I" />
+        <module name="luna-api-commons" />
+        <module name="luna-provider-eureka-node-II" />
+        <module name="luna-consumer-eureka-node-III" />
+        <module name="luna-consumer-eureka-node-II" />
+        <module name="luna-consumer-zookeeper-node" />
+        <module name="luna-consumer-consul-node" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="luna-api-commons" target="1.8" />
+      <module name="luna-consumer-consul-node" target="1.8" />
+      <module name="luna-consumer-eureka-node-I" target="1.8" />
+      <module name="luna-consumer-eureka-node-II" target="1.8" />
+      <module name="luna-consumer-eureka-node-III" target="1.8" />
+      <module name="luna-consumer-zookeeper-node" target="1.8" />
+      <module name="luna-eureka-server-node-I" target="1.8" />
+      <module name="luna-eureka-server-node-II" target="1.8" />
+      <module name="luna-provider-consul-node" target="1.8" />
+      <module name="luna-provider-eureka-node-I" target="1.8" />
+      <module name="luna-provider-eureka-node-II" target="1.8" />
+      <module name="luna-provider-zookeeper-node" target="1.8" />
+      <module name="luna-spring-cloud" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/luna-api-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-api-commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-consumer-consul-node/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-consumer-eureka-node-I/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-consumer-eureka-node-I/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-consumer-eureka-node-II/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-consumer-eureka-node-II/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-consumer-eureka-node-III/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-consumer-zookeeper-node/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-consumer-zookeeper-node/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-eureka-server-node-I/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-eureka-server-node-I/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-eureka-server-node-II/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-eureka-server-node-II/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-provider-consul-node/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-provider-consul-node/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-provider-eureka-node-I/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-provider-eureka-node-I/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-provider-eureka-node-II/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-provider-eureka-node-II/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-provider-zookeeper-node/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-provider-zookeeper-node/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

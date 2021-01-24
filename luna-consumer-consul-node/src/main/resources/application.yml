@@ -1,0 +1,19 @@
+server:
+  port: 8010
+  servlet:
+    context-path: /consumer-payment
+
+spring:
+  application:
+    name: luna-consumer-payment
+
+  cloud:
+    consul:
+      host: 192.168.1.107
+      port: 8500
+      discovery: # 指定注册对外暴露的服务名称
+        service-name: ${spring.application.name}
+        heartbeat:
+          enabled: true
+
+

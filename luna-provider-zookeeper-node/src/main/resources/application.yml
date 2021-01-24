@@ -1,0 +1,48 @@
+server:
+  port: 8003
+  servlet:
+    context-path: /provider-payment
+spring:
+  application:
+    name: luna-provider-payment
+
+  cloud:
+    # zookeeper 配置注册中心
+    zookeeper:
+      connect-string: 192.168.1.107:2181,192.168.1.107:2182,192.168.1.107:2183
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver              # mysql驱动包
+    url: jdbc:mysql://sh1.k9s.run:22311/luna-spring-cloud?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password:
+
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.luna.commons.entities    # 所有Entity别名类所在包
+
+management:
+  endpoint:
+    health:
+      # 展示详细信息
+      show-details: always
+      # 开启远程关闭
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# 自定义展示信息
+info:
+  app:
+    name: luna-provider-payment
+    java: jdk-1.8
+    encodeing: UTF-8
+  author: luna
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$

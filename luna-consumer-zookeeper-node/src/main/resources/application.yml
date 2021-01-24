@@ -1,0 +1,15 @@
+server:
+  port: 8008
+  servlet:
+    context-path: /consumer-payment
+
+spring:
+  application:
+    name: luna-consumer-payment
+
+  cloud:
+    # zookeeper 配置注册中心
+    zookeeper:
+      connect-string: 192.168.1.107:2181,192.168.1.107:2182,192.168.1.107:2183
+
+

@@ -1,0 +1,25 @@
+server:
+  port: 8006
+  servlet:
+    context-path: /consumer-payment
+
+spring:
+  application:
+    name: luna-consumer-payment
+
+eureka:
+  instance:
+    instance-id: luna-consumer-payment-node-I
+    # 访问路径IP显示
+    prefer-ip-address: true
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+      # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eurekanodei.com:7001/eureka-server/eureka/
+      #defaultZone: http://eurekanodeii.com:7002/eureka-server/eureka/,http://eurekanodei.com:7001/eureka-server/eureka/
+
+
