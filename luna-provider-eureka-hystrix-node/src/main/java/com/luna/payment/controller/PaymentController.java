@@ -36,9 +36,9 @@ public class PaymentController {
         return paymentService.paymentInfoSuccess(id);
     }
 
-    @GetMapping("/hystrix/timeout/{id}")
-    public String paymentInfoTimeout(@PathVariable("id") Integer id) {
+    @GetMapping("/hystrix/timeout/{time}/{id}")
+    public String paymentInfoTimeout(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
         log.info(serverPort + ": paymentInfoTimeout");
-        return paymentService.paymentInfoTimeout(id);
+        return paymentService.paymentInfoTimeout(time, id);
     }
 }

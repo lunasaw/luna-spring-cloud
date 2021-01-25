@@ -4,29 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_reactive_streams_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/ProviderEurekaApplicationHystrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/mapper/PaymentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment=":memo: :tada: hystrix timeout control">
+      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/Jmeter/luna-hystrix-thread.jmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-node-I/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-node-I/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/service/PaymentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/Jmeter" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -82,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/Jmeter" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -259,7 +242,7 @@
       <updated>1611505200705</updated>
       <workItem from="1611505203979" duration="3741000" />
       <workItem from="1611509047056" duration="5000" />
-      <workItem from="1611566291733" duration="1240000" />
+      <workItem from="1611566291733" duration="2430000" />
     </task>
     <task id="LOCAL-00001" summary=":memo: :tada: openFeign timeout control">
       <created>1611508311388</created>
@@ -282,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611508843294</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=":memo: :tada: hystrix timeout control">
+      <created>1611567556968</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611567556968</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +280,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":memo: :tada: openFeign timeout control" />
-    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada: openFeign timeout control" />
+    <MESSAGE value=":memo: :tada: hystrix timeout control" />
+    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada: hystrix timeout control" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="25" key="#Project_Structure" timestamp="1611506258373">
@@ -301,42 +292,42 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="403" y="173" width="1517" height="783" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.992@0.25.1920.992" timestamp="1611505937105" />
-    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2" timestamp="1611508843091">
+    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2" timestamp="1611568607655">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611508843091" />
-    <state width="1342" height="306" key="GridCell.Tab.0.bottom" timestamp="1611567263337">
+    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611568607655" />
+    <state width="1342" height="291" key="GridCell.Tab.0.bottom" timestamp="1611567830331">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="306" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611567263337" />
-    <state width="1342" height="306" key="GridCell.Tab.0.center" timestamp="1611567263336">
+    <state width="1342" height="291" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611567830331" />
+    <state width="1342" height="291" key="GridCell.Tab.0.center" timestamp="1611567830330">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="306" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611567263336" />
-    <state width="1342" height="306" key="GridCell.Tab.0.left" timestamp="1611567263336">
+    <state width="1342" height="291" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611567830330" />
+    <state width="1342" height="291" key="GridCell.Tab.0.left" timestamp="1611567830330">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="306" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611567263336" />
-    <state width="1342" height="306" key="GridCell.Tab.0.right" timestamp="1611567263337">
+    <state width="1342" height="291" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611567830330" />
+    <state width="1342" height="291" key="GridCell.Tab.0.right" timestamp="1611567830331">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="306" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611567263337" />
-    <state width="1342" height="306" key="GridCell.Tab.1.bottom" timestamp="1611567263338">
+    <state width="1342" height="291" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611567830331" />
+    <state width="1342" height="291" key="GridCell.Tab.1.bottom" timestamp="1611567830333">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="306" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611567263338" />
-    <state width="1342" height="306" key="GridCell.Tab.1.center" timestamp="1611567263337">
+    <state width="1342" height="291" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611567830333" />
+    <state width="1342" height="291" key="GridCell.Tab.1.center" timestamp="1611567830333">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="306" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611567263337" />
-    <state width="1342" height="306" key="GridCell.Tab.1.left" timestamp="1611567263337">
+    <state width="1342" height="291" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611567830333" />
+    <state width="1342" height="291" key="GridCell.Tab.1.left" timestamp="1611567830332">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="306" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611567263337" />
-    <state width="1342" height="306" key="GridCell.Tab.1.right" timestamp="1611567263338">
+    <state width="1342" height="291" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611567830332" />
+    <state width="1342" height="291" key="GridCell.Tab.1.right" timestamp="1611567830333">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="306" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611567263338" />
+    <state width="1342" height="291" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611567830333" />
     <state x="398" y="300" width="1123" height="617" key="Registry" timestamp="1611507232485">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -345,10 +336,10 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="202" y="69" width="1510" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1611567009621" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611508816887">
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611567558593">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611508816887" />
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611567558593" />
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611505198412">
       <screen x="0" y="25" width="1920" height="992" />
     </state>

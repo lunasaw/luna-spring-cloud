@@ -25,14 +25,17 @@ public class PaymentService {
 
     /**
      * 超时访问的方法
+     * 
+     * @param time 超时时长
+     * @param id 线程Id
+     * @return
      */
-    public String paymentInfoTimeout(Integer id) {
-        int interTime = 3;
+    public String paymentInfoTimeout(Long time, Integer id) {
         try {
-            TimeUnit.SECONDS.sleep(interTime);
+            TimeUnit.SECONDS.sleep(time);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "线程池：" + Thread.currentThread().getName() + "--paymentInfo_Timeout，id:" + id + "耗时" + interTime + "秒钟--";
+        return "线程池：" + Thread.currentThread().getName() + "--paymentInfo_Timeout，id:" + id + "耗时" + time + "秒钟--";
     }
 }
