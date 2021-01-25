@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_reactive_streams_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/ProviderEurekaApplicationHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/mapper/PaymentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-consumer-consul-node/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-consul-node/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-node-I/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-node-I/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +68,10 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -59,6 +80,11 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -66,7 +92,25 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProviderEurekaApplicationNodeTwo">
+  <component name="RunManager" selected="Spring Boot.ProviderEurekaApplicationHystrix">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerConsulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="luna-consumer-consul-node" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.payment.ConsumerConsulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConsumerEurekaApplicationNodeOne" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="luna-consumer-eureka-node-I" />
       <extension name="coverage">
@@ -108,6 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsumerZookeeperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="luna-consumer-zookeeper-node" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.payment.ConsumerZookeeperApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApplicationNodeOne" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="luna-eureka-server-node-I" />
       <extension name="coverage">
@@ -131,6 +182,27 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="eureka.EurekaServerApplicationNodeTwo" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderConsulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="luna-provider-consul-node" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.payment.ProviderConsulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderEurekaApplicationHystrix" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="luna-provider-eureka-hystrix-node" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luna.payment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.payment.ProviderEurekaApplicationHystrix" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,6 +236,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProviderZookeeperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="luna-provider-zookeeper-node" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.payment.ProviderZookeeperApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ConsumerEurekaApplicationNodeOne" />
@@ -180,6 +259,7 @@
       <updated>1611505200705</updated>
       <workItem from="1611505203979" duration="3741000" />
       <workItem from="1611509047056" duration="5000" />
+      <workItem from="1611566291733" duration="1240000" />
     </task>
     <task id="LOCAL-00001" summary=":memo: :tada: openFeign timeout control">
       <created>1611508311388</created>
@@ -225,46 +305,46 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611508843091" />
-    <state width="1277" height="336" key="GridCell.Tab.0.bottom" timestamp="1611508939701">
+    <state width="1342" height="306" key="GridCell.Tab.0.bottom" timestamp="1611567263337">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1277" height="336" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611508939701" />
-    <state width="1277" height="336" key="GridCell.Tab.0.center" timestamp="1611508939700">
+    <state width="1342" height="306" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611567263337" />
+    <state width="1342" height="306" key="GridCell.Tab.0.center" timestamp="1611567263336">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1277" height="336" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611508939700" />
-    <state width="1277" height="336" key="GridCell.Tab.0.left" timestamp="1611508939700">
+    <state width="1342" height="306" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611567263336" />
+    <state width="1342" height="306" key="GridCell.Tab.0.left" timestamp="1611567263336">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1277" height="336" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611508939700" />
-    <state width="1277" height="336" key="GridCell.Tab.0.right" timestamp="1611508939700">
+    <state width="1342" height="306" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611567263336" />
+    <state width="1342" height="306" key="GridCell.Tab.0.right" timestamp="1611567263337">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1277" height="336" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611508939700" />
-    <state width="1277" height="336" key="GridCell.Tab.1.bottom" timestamp="1611508939701">
+    <state width="1342" height="306" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611567263337" />
+    <state width="1342" height="306" key="GridCell.Tab.1.bottom" timestamp="1611567263338">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1277" height="336" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611508939701" />
-    <state width="1277" height="336" key="GridCell.Tab.1.center" timestamp="1611508939701">
+    <state width="1342" height="306" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611567263338" />
+    <state width="1342" height="306" key="GridCell.Tab.1.center" timestamp="1611567263337">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1277" height="336" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611508939701" />
-    <state width="1277" height="336" key="GridCell.Tab.1.left" timestamp="1611508939701">
+    <state width="1342" height="306" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611567263337" />
+    <state width="1342" height="306" key="GridCell.Tab.1.left" timestamp="1611567263337">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1277" height="336" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611508939701" />
-    <state width="1277" height="336" key="GridCell.Tab.1.right" timestamp="1611508939701">
+    <state width="1342" height="306" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611567263337" />
+    <state width="1342" height="306" key="GridCell.Tab.1.right" timestamp="1611567263338">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1277" height="336" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611508939701" />
+    <state width="1342" height="306" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611567263338" />
     <state x="398" y="300" width="1123" height="617" key="Registry" timestamp="1611507232485">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="398" y="300" width="1123" height="617" key="Registry/0.25.1920.992@0.25.1920.992" timestamp="1611507232485" />
-    <state x="389" y="69" width="1323" height="903" key="SettingsEditor" timestamp="1611505288090">
+    <state x="202" y="69" width="1510" height="903" key="SettingsEditor" timestamp="1611567009621">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="389" y="69" width="1323" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1611505288090" />
+    <state x="202" y="69" width="1510" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1611567009621" />
     <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611508816887">
       <screen x="0" y="25" width="1920" height="992" />
     </state>

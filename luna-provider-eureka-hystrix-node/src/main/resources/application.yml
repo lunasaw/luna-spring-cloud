@@ -1,0 +1,54 @@
+server:
+  port: 8005
+  servlet:
+    context-path: /provider-payment
+spring:
+  application:
+    name: luna-provider-payment
+
+eureka:
+  instance:
+    instance-id: luna-provider-payment-node-I
+    prefer-ip-address: true
+    # 客户端向服务端发送心跳包
+    #lease-renewal-interval-in-seconds: 1
+    # 客户端最后一次收到服务端心跳包后的最长等待时间
+    #lease-expiration-duration-in-seconds: 3
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+      # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eurekanodei.com:7001/eureka-server/eureka/
+      #defaultZone: http://eurekanodeii.com:7002/eureka-server/eureka/,http://eurekanodei.com:7001/eureka-server/eureka/
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.luna.commons.entities    # 所有Entity别名类所在包
+
+
+management:
+  endpoint:
+    health:
+      # 展示详细信息
+      show-details: always
+      # 开启远程关闭
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# 自定义展示信息
+info:
+  app:
+    name: luna-provider-payment
+    java: jdk-1.8
+    encodeing: UTF-8
+  author: luna
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$

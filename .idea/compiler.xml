@@ -12,6 +12,7 @@
         <module name="luna-consumer-eureka-node-I" />
         <module name="luna-eureka-server-node-I" />
         <module name="luna-provider-consul-node" />
+        <module name="luna-provider-eureka-hystrix-node" />
         <module name="luna-eureka-server-node-II" />
         <module name="luna-provider-eureka-node-I" />
         <module name="luna-api-commons" />
@@ -32,6 +33,7 @@
       <module name="luna-eureka-server-node-I" target="1.8" />
       <module name="luna-eureka-server-node-II" target="1.8" />
       <module name="luna-provider-consul-node" target="1.8" />
+      <module name="luna-provider-eureka-hystrix-node" target="1.8" />
       <module name="luna-provider-eureka-node-I" target="1.8" />
       <module name="luna-provider-eureka-node-II" target="1.8" />
       <module name="luna-provider-zookeeper-node" target="1.8" />

@@ -12,6 +12,7 @@
         <module>luna-provider-eureka-node-I</module>
         <module>luna-provider-eureka-node-II</module>
         <module>luna-provider-zookeeper-node</module>
+        <module>luna-provider-eureka-hystrix-node</module>
         <module>luna-provider-consul-node</module>
         <module>luna-consumer-eureka-node-I</module>
         <module>luna-consumer-eureka-node-II</module>
