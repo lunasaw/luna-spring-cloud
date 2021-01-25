@@ -3,6 +3,9 @@ package com.luna.payment.controller;
 import com.luna.commons.entities.CommonResult;
 import com.luna.commons.entities.Payment;
 import com.luna.payment.service.PaymentService;
+import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -36,9 +39,15 @@ public class PaymentHystrixController {
         return paymentService.paymentInfoSuccess(id);
     }
 
-    @GetMapping("/hystrix/timeout/{time}/{id}")
-    public String paymentInfoTimeout(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
+    @GetMapping("/hystrix/timeout/single/{time}/{id}")
+    public String paymentInfoTimeoutSingle(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
         log.info(serverPort + ": paymentInfoTimeout");
-        return paymentService.paymentInfoTimeout(time, id);
+        return paymentService.paymentInfoTimeoutSingle(time, id);
+    }
+
+    @GetMapping("/hystrix/timeout/global/{time}/{id}")
+    public String paymentInfoTimeoutGlobal(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
+        log.info(serverPort + ": paymentInfoTimeout");
+        return paymentService.paymentInfoTimeoutGlobal(time, id);
     }
 }

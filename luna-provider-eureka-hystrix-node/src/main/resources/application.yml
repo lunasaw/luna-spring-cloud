@@ -6,6 +6,19 @@ spring:
   application:
     name: luna-provider-payment-hystrix
 
+#hystrix熔断超时配置
+hystrix:
+  command:
+    default:
+      execution:
+        #开启超时配置(默认为开启)
+        timeout:
+          enabled: true
+        #设置超时时间
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
+
 eureka:
   instance:
     instance-id: luna-provider-payment-hystrix-node
