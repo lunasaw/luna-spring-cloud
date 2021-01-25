@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment=":memo: :tada: hystrix timeout control">
-      <change afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/Jmeter/luna-hystrix-thread.jmx" afterDir="false" />
+    <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/src/main/java/com/luna/payment/ConsumerEurekaApplicationNodeThree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/src/main/java/com/luna/payment/config/ApplicationContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/src/main/java/com/luna/payment/config/OpenFeignConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/src/main/java/com/luna/payment/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/src/main/java/com/luna/payment/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-node-III/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-node-III/src/main/java/com/luna/payment/ConsumerEurekaApplicationNodeThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/ConsumerEurekaApplicationHystrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-node-III/src/main/java/com/luna/payment/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/config/ApplicationContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-node-III/src/main/java/com/luna/payment/config/OpenFeignConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/config/OpenFeignConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-node-III/src/main/java/com/luna/payment/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/controller/OrderHystrixController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-node-III/src/main/java/com/luna/payment/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/service/PaymentHystrixService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-node-III/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentHystrixController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/Jmeter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -64,8 +83,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/Jmeter" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/Jmeter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -75,7 +94,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProviderEurekaApplicationHystrix">
+  <component name="RunManager" selected="Spring Boot.ConsumerEurekaApplicationHystrix">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -94,6 +113,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsumerEurekaApplicationHystrix" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="luna-consumer-eureka-openfeign-hystrix-node" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luna.payment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.payment.ConsumerEurekaApplicationHystrix" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConsumerEurekaApplicationNodeOne" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="luna-consumer-eureka-node-I" />
       <extension name="coverage">
@@ -108,7 +141,7 @@
       </method>
     </configuration>
     <configuration name="ConsumerEurekaApplicationNodeThree" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="luna-consumer-eureka-node-III" />
+      <module name="luna-consumer-eureka-openfeign-node" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.luna.payment.*" />
@@ -242,7 +275,7 @@
       <updated>1611505200705</updated>
       <workItem from="1611505203979" duration="3741000" />
       <workItem from="1611509047056" duration="5000" />
-      <workItem from="1611566291733" duration="2430000" />
+      <workItem from="1611566291733" duration="5050000" />
     </task>
     <task id="LOCAL-00001" summary=":memo: :tada: openFeign timeout control">
       <created>1611508311388</created>
@@ -272,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611567556968</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=":memo: :tada:     hystrix timeout thread jmeter test">
+      <created>1611568760950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611568760950</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +321,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":memo: :tada: openFeign timeout control" />
     <MESSAGE value=":memo: :tada: hystrix timeout control" />
-    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada: hystrix timeout control" />
+    <MESSAGE value=":memo: :tada:     hystrix timeout thread jmeter test" />
+    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada:     hystrix timeout thread jmeter test" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="25" key="#Project_Structure" timestamp="1611506258373">
@@ -292,42 +334,46 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="403" y="173" width="1517" height="783" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.992@0.25.1920.992" timestamp="1611505937105" />
-    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2" timestamp="1611568607655">
+    <state x="406" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611572253293">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611568607655" />
-    <state width="1342" height="291" key="GridCell.Tab.0.bottom" timestamp="1611567830331">
+    <state x="406" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.992@0.25.1920.992" timestamp="1611572253293" />
+    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2" timestamp="1611568760779">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="291" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611567830331" />
-    <state width="1342" height="291" key="GridCell.Tab.0.center" timestamp="1611567830330">
+    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611568760779" />
+    <state width="1285" height="375" key="GridCell.Tab.0.bottom" timestamp="1611573233787">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="291" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611567830330" />
-    <state width="1342" height="291" key="GridCell.Tab.0.left" timestamp="1611567830330">
+    <state width="1285" height="375" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611573233787" />
+    <state width="1285" height="375" key="GridCell.Tab.0.center" timestamp="1611573233786">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="291" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611567830330" />
-    <state width="1342" height="291" key="GridCell.Tab.0.right" timestamp="1611567830331">
+    <state width="1285" height="375" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611573233786" />
+    <state width="1285" height="375" key="GridCell.Tab.0.left" timestamp="1611573233785">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="291" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611567830331" />
-    <state width="1342" height="291" key="GridCell.Tab.1.bottom" timestamp="1611567830333">
+    <state width="1285" height="375" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611573233785" />
+    <state width="1285" height="375" key="GridCell.Tab.0.right" timestamp="1611573233787">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="291" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611567830333" />
-    <state width="1342" height="291" key="GridCell.Tab.1.center" timestamp="1611567830333">
+    <state width="1285" height="375" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611573233787" />
+    <state width="1285" height="375" key="GridCell.Tab.1.bottom" timestamp="1611573233789">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="291" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611567830333" />
-    <state width="1342" height="291" key="GridCell.Tab.1.left" timestamp="1611567830332">
+    <state width="1285" height="375" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611573233789" />
+    <state width="1285" height="375" key="GridCell.Tab.1.center" timestamp="1611573233788">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="291" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611567830332" />
-    <state width="1342" height="291" key="GridCell.Tab.1.right" timestamp="1611567830333">
+    <state width="1285" height="375" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611573233788" />
+    <state width="1285" height="375" key="GridCell.Tab.1.left" timestamp="1611573233788">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state width="1342" height="291" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611567830333" />
+    <state width="1285" height="375" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611573233788" />
+    <state width="1285" height="375" key="GridCell.Tab.1.right" timestamp="1611573233789">
+      <screen x="0" y="25" width="1920" height="992" />
+    </state>
+    <state width="1285" height="375" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611573233789" />
     <state x="398" y="300" width="1123" height="617" key="Registry" timestamp="1611507232485">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -336,10 +382,10 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="202" y="69" width="1510" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1611567009621" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611567558593">
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611568770991">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611567558593" />
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611568770991" />
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611505198412">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -348,9 +394,9 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="586" y="175" width="862" height="692" key="find.popup/0.25.1920.992@0.25.1920.992" timestamp="1611505865036" />
-    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup" timestamp="1611508402110">
+    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup" timestamp="1611572881218">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1920.992@0.25.1920.992" timestamp="1611508402110" />
+    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1920.992@0.25.1920.992" timestamp="1611572881218" />
   </component>
 </project>

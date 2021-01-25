@@ -7,7 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/luna-consumer-consul-node/luna-consumer-consul-node.iml" filepath="$PROJECT_DIR$/luna-consumer-consul-node/luna-consumer-consul-node.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-consumer-eureka-node-I/luna-consumer-eureka-node-I.iml" filepath="$PROJECT_DIR$/luna-consumer-eureka-node-I/luna-consumer-eureka-node-I.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-consumer-eureka-node-II/luna-consumer-eureka-node-II.iml" filepath="$PROJECT_DIR$/luna-consumer-eureka-node-II/luna-consumer-eureka-node-II.iml" />
-      <module fileurl="file://$PROJECT_DIR$/luna-consumer-eureka-node-III/luna-consumer-eureka-node-III.iml" filepath="$PROJECT_DIR$/luna-consumer-eureka-node-III/luna-consumer-eureka-node-III.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/luna-consumer-eureka-openfeign-hystrix-node.iml" filepath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/luna-consumer-eureka-openfeign-hystrix-node.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/luna-consumer-eureka-openfeign-node.iml" filepath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/luna-consumer-eureka-openfeign-node.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-consumer-zookeeper-node/luna-consumer-zookeeper-node.iml" filepath="$PROJECT_DIR$/luna-consumer-zookeeper-node/luna-consumer-zookeeper-node.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-eureka-server-node-I/luna-eureka-server-node-I.iml" filepath="$PROJECT_DIR$/luna-eureka-server-node-I/luna-eureka-server-node-I.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-eureka-server-node-II/luna-eureka-server-node-II.iml" filepath="$PROJECT_DIR$/luna-eureka-server-node-II/luna-eureka-server-node-II.iml" />

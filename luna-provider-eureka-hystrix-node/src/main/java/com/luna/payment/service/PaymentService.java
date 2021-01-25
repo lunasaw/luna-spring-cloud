@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class PaymentService {
 
     /**
-     * 可以正常访问的方法
+     * 线程控制
      * 
      * @param id
      * @return

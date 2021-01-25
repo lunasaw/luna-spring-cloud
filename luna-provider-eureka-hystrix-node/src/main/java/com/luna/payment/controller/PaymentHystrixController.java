@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @RestController
 @RequestMapping("/api/payment")
-public class PaymentController {
+public class PaymentHystrixController {
 
     @Resource
     private PaymentService paymentService;

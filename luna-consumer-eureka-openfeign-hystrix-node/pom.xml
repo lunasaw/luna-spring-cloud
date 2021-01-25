@@ -9,9 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>luna-consumer-eureka-node-III</artifactId>
+    <artifactId>luna-consumer-eureka-openfeign-hystrix-node</artifactId>
 
     <dependencies>
+        <!-- hystrix -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
         <!-- Open Feign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

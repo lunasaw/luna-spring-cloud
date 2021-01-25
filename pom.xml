@@ -16,7 +16,8 @@
         <module>luna-provider-consul-node</module>
         <module>luna-consumer-eureka-node-I</module>
         <module>luna-consumer-eureka-node-II</module>
-        <module>luna-consumer-eureka-node-III</module>
+        <module>luna-consumer-eureka-openfeign-node</module>
+        <module>luna-consumer-eureka-openfeign-hystrix-node</module>
         <module>luna-consumer-zookeeper-node</module>
         <module>luna-consumer-consul-node</module>
         <module>luna-eureka-server-node-I</module>

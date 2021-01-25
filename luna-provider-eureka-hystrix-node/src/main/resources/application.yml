@@ -4,11 +4,11 @@ server:
     context-path: /provider-payment
 spring:
   application:
-    name: luna-provider-payment
+    name: luna-provider-payment-hystrix
 
 eureka:
   instance:
-    instance-id: luna-provider-payment-node-I
+    instance-id: luna-provider-payment-hystrix-node
     prefer-ip-address: true
     # 客户端向服务端发送心跳包
     #lease-renewal-interval-in-seconds: 1
