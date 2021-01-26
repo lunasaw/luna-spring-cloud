@@ -22,15 +22,43 @@ public interface PaymentHystrixService {
      * @return
      */
     @GetMapping(PROVIDER_PAYMENT + "/hystrix/{id}")
-    public String paymentInfoSuccess(@PathVariable("id") Integer id);
+    String paymentInfoSuccess(@PathVariable("id") Integer id);
 
     /**
-     * 线程超时控制
+     * 单方法延迟
      * 
      * @param time
      * @param id
      * @return
      */
-    @GetMapping(PROVIDER_PAYMENT + "/hystrix/timeout/{time}/{id}")
-    public String paymentInfoTimeout(@PathVariable("time") Long time, @PathVariable("id") Integer id);
+    @GetMapping(PROVIDER_PAYMENT + "/hystrix/timeout/single/{time}/{id}")
+    String paymentInfoTimeoutSingle(@PathVariable("time") Long time, @PathVariable("id") Integer id);
+
+    /**
+     * 全局延迟
+     * 
+     * @param time
+     * @param id
+     * @return
+     */
+    @GetMapping(PROVIDER_PAYMENT + "/hystrix/timeout/global/{time}/{id}")
+    String paymentInfoTimeoutGlobal(@PathVariable("time") Long time, @PathVariable("id") Integer id);
+
+    /**
+     * 单方法降级
+     * 
+     * @param time
+     * @param id
+     * @return
+     */
+    @GetMapping(PROVIDER_PAYMENT + "/hystrix/timeout/single/fallback/{time}/{id}")
+    String paymentInfoTimeoutSingleHandler(@PathVariable("time") Long time, @PathVariable("id") Integer id);
+
+    /**
+     * 全局降级
+     * 
+     * @return
+     */
+    @GetMapping(PROVIDER_PAYMENT + "/hystrix/timeout/global/fallback")
+    String paymentInfoTimeoutGlobalHandler();
 }

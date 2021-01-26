@@ -12,7 +12,6 @@ import java.util.concurrent.TimeUnit;
  * @date 2020-02-18 10:40
  */
 @Service
-@DefaultProperties(defaultFallback = "paymentInfoTimeoutGlobleHandler")
 public class PaymentService {
 
     /**
@@ -32,9 +31,6 @@ public class PaymentService {
      * @param id 线程Id
      * @return
      */
-    @HystrixCommand(commandProperties = {
-        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
-    })
     public String paymentInfoTimeoutGlobal(Long time, Integer id) {
         try {
             TimeUnit.SECONDS.sleep(time);
@@ -44,9 +40,6 @@ public class PaymentService {
         return "线程池：" + Thread.currentThread().getName() + "--paymentInfo_Timeout，id:" + id + "耗时" + time + "秒钟--";
     }
 
-    @HystrixCommand(fallbackMethod = "paymentInfoTimeoutSingleHandler", commandProperties = {
-        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
-    })
     public String paymentInfoTimeoutSingle(Long time, Integer id) {
         try {
             TimeUnit.SECONDS.sleep(time);
@@ -72,7 +65,7 @@ public class PaymentService {
      *
      * @return
      */
-    public String paymentInfoTimeoutGlobleHandler() {
+    public String paymentInfoTimeoutGlobalHandler() {
         return "系统错误，请稍后再试 😭";
     }
 }

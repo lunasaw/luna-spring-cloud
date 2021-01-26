@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @RestController
 @RequestMapping("/api/payment")
+@DefaultProperties(defaultFallback = "paymentInfoTimeoutGlobalHandler")
 public class PaymentHystrixController {
 
     @Resource
@@ -39,15 +40,57 @@ public class PaymentHystrixController {
         return paymentService.paymentInfoSuccess(id);
     }
 
+    /**
+     * 单方法延迟
+     * 
+     * @param time
+     * @param id
+     * @return
+     */
     @GetMapping("/hystrix/timeout/single/{time}/{id}")
+    @HystrixCommand(fallbackMethod = "paymentInfoTimeoutSingleHandler", commandProperties = {
+        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+    })
     public String paymentInfoTimeoutSingle(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
         log.info(serverPort + ": paymentInfoTimeout");
         return paymentService.paymentInfoTimeoutSingle(time, id);
     }
 
+    /**
+     * 全局延迟
+     * 
+     * @param time
+     * @param id
+     * @return
+     */
     @GetMapping("/hystrix/timeout/global/{time}/{id}")
+    @HystrixCommand(commandProperties = {
+        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+    })
     public String paymentInfoTimeoutGlobal(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
         log.info(serverPort + ": paymentInfoTimeout");
         return paymentService.paymentInfoTimeoutGlobal(time, id);
+    }
+
+    /**
+     * 单方法降级
+     * 
+     * @param time
+     * @param id
+     * @return
+     */
+    @GetMapping("/hystrix/timeout/single/fallback/{time}/{id}")
+    public String paymentInfoTimeoutSingleHandler(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
+        return paymentService.paymentInfoTimeoutSingleHandler(time, id);
+    }
+
+    /**
+     * 全局降级
+     * 
+     * @return
+     */
+    @GetMapping("/hystrix/timeout/global/fallback/{time}/{id}")
+    public String paymentInfoTimeoutGlobalHandler() {
+        return paymentService.paymentInfoTimeoutGlobalHandler();
     }
 }

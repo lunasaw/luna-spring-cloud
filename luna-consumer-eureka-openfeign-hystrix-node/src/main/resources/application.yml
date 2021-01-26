@@ -31,6 +31,19 @@ ribbon:
   # 建立链接后从服务器读取的时长 默认1秒
   ConnectTimeout: 5000
 
+#hystrix熔断超时配置
+hystrix:
+  command:
+    default:
+      execution:
+        #开启超时配置(默认为开启)
+        timeout:
+          enabled: true
+        #设置超时时间
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
+
 
 logging:
   level:

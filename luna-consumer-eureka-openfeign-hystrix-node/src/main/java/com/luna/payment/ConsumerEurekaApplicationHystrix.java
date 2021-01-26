@@ -2,6 +2,7 @@ package com.luna.payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
@@ -12,6 +13,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = "com.luna.payment.service")
+@EnableCircuitBreaker
 public class ConsumerEurekaApplicationHystrix {
     public static void main(String[] args) {
         SpringApplication.run(ConsumerEurekaApplicationHystrix.class, args);
