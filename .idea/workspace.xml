@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/service/OrderFallbackServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/ConsumerEurekaApplicationHystrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/ConsumerEurekaApplicationHystrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/controller/OrderHystrixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/controller/OrderHystrixController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/service/OrderFallbackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/service/OrderFallbackServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/service/PaymentHystrixService.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java/com/luna/payment/service/PaymentHystrixService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentHystrixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentHystrixController.java" afterDir="false" />
@@ -279,7 +278,7 @@
       <workItem from="1611505203979" duration="3741000" />
       <workItem from="1611509047056" duration="5000" />
       <workItem from="1611566291733" duration="11670000" />
-      <workItem from="1611645571375" duration="4281000" />
+      <workItem from="1611645571375" duration="6535000" />
     </task>
     <task id="LOCAL-00001" summary=":memo: :tada: openFeign timeout control">
       <created>1611508311388</created>
@@ -330,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611579727906</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=":memo: :tada:    openfeign HystrixCommand timeout do">
+      <created>1611649901384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611649901384</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,49 +368,50 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="406" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.992@0.25.1920.992" timestamp="1611572253293" />
-    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2" timestamp="1611579727730">
-      <screen x="0" y="25" width="1920" height="992" />
+    <state x="207" y="65" width="1500" height="958" key="CommitChangelistDialog2" timestamp="1611649901083">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state x="207" y="65" width="1500" height="958" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649901083" />
     <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611579727730" />
-    <state width="1285" height="290" key="GridCell.Tab.0.bottom" timestamp="1611649841953">
+    <state width="1285" height="263" key="GridCell.Tab.0.bottom" timestamp="1611651517111">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1285" height="290" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611649841953" />
+    <state width="1285" height="263" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
     <state width="1285" height="336" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611580452466" />
-    <state width="1285" height="290" key="GridCell.Tab.0.center" timestamp="1611649841953">
+    <state width="1285" height="263" key="GridCell.Tab.0.center" timestamp="1611651517111">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1285" height="290" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611649841953" />
+    <state width="1285" height="263" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
     <state width="1285" height="336" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611580452466" />
-    <state width="1285" height="290" key="GridCell.Tab.0.left" timestamp="1611649841952">
+    <state width="1285" height="263" key="GridCell.Tab.0.left" timestamp="1611651517111">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1285" height="290" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611649841952" />
+    <state width="1285" height="263" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
     <state width="1285" height="336" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611580452466" />
-    <state width="1285" height="290" key="GridCell.Tab.0.right" timestamp="1611649841953">
+    <state width="1285" height="263" key="GridCell.Tab.0.right" timestamp="1611651517111">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1285" height="290" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611649841953" />
+    <state width="1285" height="263" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
     <state width="1285" height="336" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611580452466" />
-    <state width="1285" height="290" key="GridCell.Tab.1.bottom" timestamp="1611649841954">
+    <state width="1285" height="263" key="GridCell.Tab.1.bottom" timestamp="1611651517112">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1285" height="290" key="GridCell.Tab.1.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611649841954" />
+    <state width="1285" height="263" key="GridCell.Tab.1.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
     <state width="1285" height="336" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611580452467" />
-    <state width="1285" height="290" key="GridCell.Tab.1.center" timestamp="1611649841954">
+    <state width="1285" height="263" key="GridCell.Tab.1.center" timestamp="1611651517112">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1285" height="290" key="GridCell.Tab.1.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611649841954" />
+    <state width="1285" height="263" key="GridCell.Tab.1.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
     <state width="1285" height="336" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611580452467" />
-    <state width="1285" height="290" key="GridCell.Tab.1.left" timestamp="1611649841954">
+    <state width="1285" height="263" key="GridCell.Tab.1.left" timestamp="1611651517111">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1285" height="290" key="GridCell.Tab.1.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611649841954" />
+    <state width="1285" height="263" key="GridCell.Tab.1.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
     <state width="1285" height="336" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611580452467" />
-    <state width="1285" height="290" key="GridCell.Tab.1.right" timestamp="1611649841954">
+    <state width="1285" height="263" key="GridCell.Tab.1.right" timestamp="1611651517112">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1285" height="290" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611649841954" />
+    <state width="1285" height="263" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
     <state width="1285" height="336" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611580452467" />
     <state x="398" y="300" width="1123" height="617" key="Registry" timestamp="1611507232485">
       <screen x="0" y="25" width="1920" height="992" />
@@ -414,9 +421,10 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="202" y="69" width="1510" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1611576764574" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611580053183">
-      <screen x="0" y="25" width="1920" height="992" />
+    <state x="460" y="206" key="Vcs.Push.Dialog.v2" timestamp="1611649903052">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state x="460" y="206" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649903052" />
     <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611580053183" />
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611505198412">
       <screen x="0" y="25" width="1920" height="992" />
@@ -426,10 +434,10 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="586" y="175" width="862" height="692" key="find.popup/0.25.1920.992@0.25.1920.992" timestamp="1611505865036" />
-    <state x="541" y="25" width="838" height="1098" key="search.everywhere.popup" timestamp="1611647951639">
+    <state x="541" y="25" width="838" height="1098" key="search.everywhere.popup" timestamp="1611651300036">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="541" y="25" width="838" height="1098" key="search.everywhere.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1611647951639" />
+    <state x="541" y="25" width="838" height="1098" key="search.everywhere.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1611651300036" />
     <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1920.992@0.25.1920.992" timestamp="1611577147407" />
   </component>
 </project>

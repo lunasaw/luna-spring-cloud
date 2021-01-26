@@ -52,7 +52,7 @@ public class PaymentHystrixController {
         @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
     })
     public String paymentInfoTimeoutSingle(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
-        log.info(serverPort + ": paymentInfoTimeout");
+        log.info(serverPort + ": paymentInfoTimeoutSingle");
         return paymentService.paymentInfoTimeoutSingle(time, id);
     }
 
@@ -68,7 +68,7 @@ public class PaymentHystrixController {
         @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
     })
     public String paymentInfoTimeoutGlobal(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
-        log.info(serverPort + ": paymentInfoTimeout");
+        log.info(serverPort + ": paymentInfoTimeoutGlobal");
         return paymentService.paymentInfoTimeoutGlobal(time, id);
     }
 
@@ -89,7 +89,7 @@ public class PaymentHystrixController {
      * 
      * @return
      */
-    @GetMapping("/hystrix/timeout/global/fallback/{time}/{id}")
+    @GetMapping("/hystrix/timeout/global/fallback")
     public String paymentInfoTimeoutGlobalHandler() {
         return paymentService.paymentInfoTimeoutGlobalHandler();
     }

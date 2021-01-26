@@ -1,8 +1,5 @@
 package com.luna.payment.service;
 
-import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
@@ -37,7 +34,7 @@ public class PaymentService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "线程池：" + Thread.currentThread().getName() + "--paymentInfo_Timeout，id:" + id + "耗时" + time + "秒钟--";
+        return "线程池：" + Thread.currentThread().getName() + "--paymentInfoTimeoutGlobal，id:" + id + "耗时" + time + "秒钟--";
     }
 
     public String paymentInfoTimeoutSingle(Long time, Integer id) {
@@ -46,7 +43,7 @@ public class PaymentService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "线程池：" + Thread.currentThread().getName() + "--paymentInfo_Timeout，id:" + id + "耗时" + time + "秒钟--";
+        return "线程池：" + Thread.currentThread().getName() + "--paymentInfoTimeoutSingle，id:" + id + "耗时" + time + "秒钟--";
     }
 
     /**

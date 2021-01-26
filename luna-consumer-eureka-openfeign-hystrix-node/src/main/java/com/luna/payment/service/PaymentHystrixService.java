@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @author luna
  * @date 2020-02-18 10:40
  */
-@FeignClient(value = "luna-provider-payment-hystrix")
+@FeignClient(value = "luna-provider-payment-hystrix", fallback = OrderFallbackServiceImpl.class)
 @Component
 public interface PaymentHystrixService {
 
