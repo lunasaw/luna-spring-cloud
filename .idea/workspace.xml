@@ -5,17 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-hystrix-dashboard-node/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-hystrix-dashboard-node/src/main/java/com/luna/payment/ConsumerEurekaApplicationHystrixDashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-consumer-eureka-hystrix-dashboard-node/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_0_9_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_core_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_dashboard_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_dashboard_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_multipart_parser_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_d3js_3_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-gateway-eureka-node/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-gateway-eureka-node/src/main/java/com/luna/gateway/GateWayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-gateway-eureka-node/src/main/java/com/luna/gateway/config/GateWayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-gateway-eureka-node/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/ProviderEurekaApplicationHystrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/ProviderEurekaApplicationHystrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentHystrixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/java/com/luna/payment/controller/PaymentHystrixController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +88,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23330367" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -84,14 +107,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProviderEurekaApplicationHystrix">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.GateWayApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,6 +232,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="luna-gateway-eureka-node" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luna.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.gateway.GateWayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProviderConsulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="luna-provider-consul-node" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.payment.ProviderConsulApplication" />
@@ -276,11 +314,13 @@
       <item itemvalue="Spring Boot.ProviderEurekaApplicationNodeOne" />
       <item itemvalue="Spring Boot.ProviderEurekaApplicationNodeTwo" />
       <item itemvalue="Spring Boot.ProviderZookeeperApplication" />
-      <item itemvalue="Spring Boot.ConsumerEurekaApplicationNodeOne" />
       <item itemvalue="Spring Boot.ConsumerEurekaApplicationHystrixDashboard" />
+      <item itemvalue="Spring Boot.ConsumerEurekaApplicationNodeOne" />
+      <item itemvalue="Spring Boot.GateWayApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GateWayApplication" />
         <item itemvalue="Spring Boot.ConsumerEurekaApplicationNodeOne" />
       </list>
     </recent_temporary>
@@ -300,7 +340,8 @@
       <workItem from="1611717196422" duration="2249000" />
       <workItem from="1611719454802" duration="1842000" />
       <workItem from="1611723901645" duration="1134000" />
-      <workItem from="1611725039797" duration="1091000" />
+      <workItem from="1611725039797" duration="2002000" />
+      <workItem from="1611727120829" duration="2463000" />
     </task>
     <task id="LOCAL-00001" summary=":memo: :tada: openFeign timeout control">
       <created>1611508311388</created>
@@ -372,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611718039456</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=":memo: :tada:    HystrixCommand circuitBreaker.enabled hystrix.stream">
+      <created>1611726178746</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611726178746</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,14 +433,19 @@
     <MESSAGE value=":memo: :tada:    openfeign hystrix timeout thread jmeter test" />
     <MESSAGE value=":memo: :tada:    openfeign HystrixCommand timeout do" />
     <MESSAGE value=":memo: :tada:    openfeign HystrixCommand circuitBreaker.enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada:    openfeign HystrixCommand circuitBreaker.enabled" />
+    <MESSAGE value=":memo: :tada:    HystrixCommand circuitBreaker.enabled hystrix.stream" />
+    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada:    HystrixCommand circuitBreaker.enabled hystrix.stream" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="25" key="#Project_Structure" timestamp="1611719606915">
+    <state x="320" y="25" key="#Project_Structure" timestamp="1611726961031">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="320" y="25" key="#Project_Structure/0.25.1920.992@0.25.1920.992" timestamp="1611719606915" />
+    <state x="320" y="25" key="#Project_Structure/0.25.1920.992@0.25.1920.992" timestamp="1611726961031" />
+    <state x="628" y="296" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1611727844980">
+      <screen x="0" y="25" width="1920" height="992" />
+    </state>
+    <state x="628" y="296" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.25.1920.992@0.25.1920.992" timestamp="1611727844980" />
     <state x="403" y="173" width="1517" height="783" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611505937105">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -405,64 +458,64 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="406" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.992@0.25.1920.992" timestamp="1611572253293" />
-    <state x="210" y="25" width="1500" height="958" key="CommitChangelistDialog2" timestamp="1611718039166">
+    <state x="210" y="25" width="1500" height="958" key="CommitChangelistDialog2" timestamp="1611726178552">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="207" y="65" width="1500" height="958" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649901083" />
-    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611718039166" />
-    <state width="1179" height="255" key="GridCell.Tab.0.bottom" timestamp="1611726083232">
+    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611726178552" />
+    <state width="1179" height="220" key="GridCell.Tab.0.bottom" timestamp="1611729513473">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1179" height="255" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611726083232" />
-    <state width="1179" height="255" key="GridCell.Tab.0.center" timestamp="1611726083231">
+    <state width="1179" height="220" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611729513473" />
+    <state width="1179" height="220" key="GridCell.Tab.0.center" timestamp="1611729513471">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1179" height="255" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611726083231" />
-    <state width="1179" height="255" key="GridCell.Tab.0.left" timestamp="1611726083229">
+    <state width="1179" height="220" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611729513471" />
+    <state width="1179" height="220" key="GridCell.Tab.0.left" timestamp="1611729513471">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1179" height="255" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611726083229" />
-    <state width="1179" height="255" key="GridCell.Tab.0.right" timestamp="1611726083231">
+    <state width="1179" height="220" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611729513471" />
+    <state width="1179" height="220" key="GridCell.Tab.0.right" timestamp="1611729513472">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1179" height="255" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611726083231" />
-    <state width="1179" height="255" key="GridCell.Tab.1.bottom" timestamp="1611726083234">
+    <state width="1179" height="220" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611729513472" />
+    <state width="1179" height="220" key="GridCell.Tab.1.bottom" timestamp="1611729513476">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1179" height="255" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611726083234" />
-    <state width="1179" height="255" key="GridCell.Tab.1.center" timestamp="1611726083233">
+    <state width="1179" height="220" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611729513476" />
+    <state width="1179" height="220" key="GridCell.Tab.1.center" timestamp="1611729513474">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1179" height="255" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611726083233" />
-    <state width="1179" height="255" key="GridCell.Tab.1.left" timestamp="1611726083232">
+    <state width="1179" height="220" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611729513474" />
+    <state width="1179" height="220" key="GridCell.Tab.1.left" timestamp="1611729513473">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1179" height="255" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611726083232" />
-    <state width="1179" height="255" key="GridCell.Tab.1.right" timestamp="1611726083233">
+    <state width="1179" height="220" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611729513473" />
+    <state width="1179" height="220" key="GridCell.Tab.1.right" timestamp="1611729513475">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1179" height="255" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611726083233" />
+    <state width="1179" height="220" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611729513475" />
     <state x="398" y="300" width="1123" height="617" key="Registry" timestamp="1611507232485">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="398" y="300" width="1123" height="617" key="Registry/0.25.1920.992@0.25.1920.992" timestamp="1611507232485" />
-    <state x="202" y="69" width="1510" height="903" key="SettingsEditor" timestamp="1611719387896">
+    <state x="202" y="69" width="1510" height="903" key="SettingsEditor" timestamp="1611727912850">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="202" y="69" width="1510" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1611719387896" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611718041228">
+    <state x="202" y="69" width="1510" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1611727912850" />
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611726180135">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="460" y="206" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649903052" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611718041228" />
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611726180135" />
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611505198412">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -471,6 +524,10 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="586" y="175" width="862" height="728" key="find.popup/0.25.1920.992@0.25.1920.992" timestamp="1611725503328" />
+    <state x="-80" y="101" key="new project wizard" timestamp="1611726838663">
+      <screen x="0" y="25" width="1920" height="992" />
+    </state>
+    <state x="-80" y="101" key="new project wizard/0.25.1920.992@0.25.1920.992" timestamp="1611726838663" />
     <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup" timestamp="1611725446594">
       <screen x="0" y="25" width="1920" height="992" />
     </state>

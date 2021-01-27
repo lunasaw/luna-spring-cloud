@@ -23,6 +23,7 @@
         <module>luna-consumer-consul-node</module>
         <module>luna-eureka-server-node-I</module>
         <module>luna-eureka-server-node-II</module>
+        <module>luna-gateway-eureka-node</module>
     </modules>
     <packaging>pom</packaging>
 
