@@ -17,6 +17,7 @@
         <module name="luna-eureka-server-node-II" />
         <module name="luna-provider-eureka-node-I" />
         <module name="luna-api-commons" />
+        <module name="luna-consumer-eureka-hystrix-dashboard-node" />
         <module name="luna-provider-eureka-node-II" />
         <module name="luna-consumer-eureka-openfeign-node" />
         <module name="luna-consumer-eureka-node-II" />
@@ -27,6 +28,7 @@
     <bytecodeTargetLevel target="8">
       <module name="luna-api-commons" target="1.8" />
       <module name="luna-consumer-consul-node" target="1.8" />
+      <module name="luna-consumer-eureka-hystrix-dashboard-node" target="1.8" />
       <module name="luna-consumer-eureka-node-I" target="1.8" />
       <module name="luna-consumer-eureka-node-II" target="1.8" />
       <module name="luna-consumer-eureka-openfeign-hystrix-node" target="1.8" />

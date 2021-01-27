@@ -1,0 +1,39 @@
+server:
+  port: 8012
+  servlet:
+    context-path: /hystrix-dashboard
+
+spring:
+  application:
+    name: luna-hystrix-dashboard
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  instance:
+    instance-id: luna-hystrix-dashboard-node
+    # 访问路径IP显示
+    prefer-ip-address: true
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+      # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eurekanodei.com:7001/eureka-server/eureka/
+      #defaultZone: http://eurekanodeii.com:7002/eureka-server/eureka/,http://eurekanodei.com:7001/eureka-server/eureka/
+
+
+#hystrix熔断超时配置
+hystrix:
+  command:
+    default:
+      execution:
+        #开启超时配置(默认为开启)
+        timeout:
+          enabled: true
+        #设置超时时间
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1500

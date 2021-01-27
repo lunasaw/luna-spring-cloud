@@ -106,7 +106,7 @@ public class PaymentHystrixController {
         @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"), // 请求次数
         @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), // 时间窗口期
         @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60"), // 失败率达到多少后跳闸
-        // 整体意思：10秒内 10次请求，有6次失败，就跳闸
+        // 整体意思：10秒内 10次请求，有6次失败，就跳闸 10秒后恢复检查
     })
     public String paymentCircuitBreaker(@PathVariable("id") Integer id) {
         return paymentService.paymentCircuitBreaker(id);
