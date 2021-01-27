@@ -1,5 +1,8 @@
 package com.luna.payment.service;
 
+import cn.hutool.core.util.IdUtil;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
@@ -64,5 +67,29 @@ public class PaymentService {
      */
     public String paymentInfoTimeoutGlobalHandler() {
         return "系统错误，请稍后再试 😭";
+    }
+
+    /**
+     * 服务熔断
+     * 
+     * @param id
+     * @return
+     */
+    public String paymentCircuitBreaker(Integer id) {
+        // 模拟发生异常
+        if (id < 0) {
+            throw new RuntimeException("*****id，不能为负数");
+        }
+        return Thread.currentThread().getName() + "\t" + "调用成功，流水号：" + IdUtil.simpleUUID();
+    }
+
+    /**
+     * 熔断调用
+     * 
+     * @param id
+     * @return
+     */
+    public String paymentCircuitBreakerFallback(Integer id) {
+        return "id 不能为负数，请稍后再试.... 😭";
     }
 }

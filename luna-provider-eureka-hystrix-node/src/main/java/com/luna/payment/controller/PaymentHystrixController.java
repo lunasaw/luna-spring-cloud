@@ -93,4 +93,33 @@ public class PaymentHystrixController {
     public String paymentInfoTimeoutGlobalHandler() {
         return paymentService.paymentInfoTimeoutGlobalHandler();
     }
+
+    /**
+     * 服务熔断
+     * 
+     * @param id
+     * @return
+     */
+    @GetMapping("/hystrix/circuit/{id}")
+    @HystrixCommand(fallbackMethod = "paymentCircuitBreakerFallback", commandProperties = {
+        @HystrixProperty(name = "circuitBreaker.enabled", value = "true"), // 是否开启断路器
+        @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "10"), // 请求次数
+        @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "10000"), // 时间窗口期
+        @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "60"), // 失败率达到多少后跳闸
+        // 整体意思：10秒内 10次请求，有6次失败，就跳闸
+    })
+    public String paymentCircuitBreaker(@PathVariable("id") Integer id) {
+        return paymentService.paymentCircuitBreaker(id);
+    }
+
+    /**
+     * 服务熔断调用
+     * 
+     * @param id
+     * @return
+     */
+    @GetMapping("/hystrix/circuit/fallback/{id}")
+    public String paymentCircuitBreakerFallback(@PathVariable("id") Integer id) {
+        return paymentService.paymentCircuitBreakerFallback(id);
+    }
 }
