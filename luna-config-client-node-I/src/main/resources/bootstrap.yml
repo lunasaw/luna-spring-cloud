@@ -17,7 +17,7 @@ spring:
 
 eureka:
   instance:
-    instance-id: luna-cloud-config-server
+    instance-id: luna-cloud-config-client
     # 访问路径IP显示
     prefer-ip-address: true
   client:
@@ -29,3 +29,28 @@ eureka:
       # 设置与 Eureka Server 交互的地址
       defaultZone: http://eurekanodei.com:7001/eureka-server/eureka/
       #defaultZone: http://eurekanodeii.com:7002/eureka-server/eureka/,http://eurekanodei.com:7001/eureka-server/eureka/
+
+# 暴露监控端点
+management:
+  endpoint:
+    health:
+      # 展示详细信息
+      show-details: always
+      # 开启远程关闭
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# 自定义展示信息
+info:
+  app:
+    name: luna-provider-payment
+    java: jdk-1.8
+    encodeing: UTF-8
+  author: luna
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$
