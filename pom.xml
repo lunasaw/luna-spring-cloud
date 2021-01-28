@@ -24,6 +24,7 @@
         <module>luna-eureka-server-node-I</module>
         <module>luna-eureka-server-node-II</module>
         <module>luna-gateway-eureka-node</module>
+        <module>luna-cloud-config-server</module>
     </modules>
     <packaging>pom</packaging>
 

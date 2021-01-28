@@ -1,0 +1,30 @@
+server:
+  port: 7003
+spring:
+  application:
+    name: luna-cloud-config-server  # 注册进eureka Server 的微服务名
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:czy1024/luna-spring-cloud.git # github 仓库位置
+          ## 搜索目录
+          search-paths:
+            - luna-config-center
+          # 读取的分支
+          label: master
+eureka:
+  instance:
+    instance-id: luna-cloud-config-server
+    # 访问路径IP显示
+    prefer-ip-address: true
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+      # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eurekanodei.com:7001/eureka-server/eureka/
+      #defaultZone: http://eurekanodeii.com:7002/eureka-server/eureka/,http://eurekanodei.com:7001/eureka-server/eureka/
+

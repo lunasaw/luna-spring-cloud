@@ -10,6 +10,7 @@
         <module name="luna-provider-payment-node-IIII" />
         <module name="luna-provider-zookeeper-node" />
         <module name="luna-consumer-eureka-node-I" />
+        <module name="luna-cloud-config-server" />
         <module name="luna-eureka-server-node-I" />
         <module name="luna-provider-consul-node" />
         <module name="luna-consumer-eureka-openfeign-hystrix-node" />
@@ -28,6 +29,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="luna-api-commons" target="1.8" />
+      <module name="luna-cloud-config-server" target="1.8" />
       <module name="luna-consumer-consul-node" target="1.8" />
       <module name="luna-consumer-eureka-hystrix-dashboard-node" target="1.8" />
       <module name="luna-consumer-eureka-node-I" target="1.8" />
