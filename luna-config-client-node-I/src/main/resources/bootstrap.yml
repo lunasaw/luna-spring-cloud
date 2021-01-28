@@ -1,5 +1,5 @@
 server:
-  port: 7004
+  port: 7021
   servlet:
     context-path: /config-client
 

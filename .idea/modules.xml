@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/luna-api-commons/luna-api-commons.iml" filepath="$PROJECT_DIR$/luna-api-commons/luna-api-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luna-cloud-config-bus-client/luna-cloud-config-bus-client.iml" filepath="$PROJECT_DIR$/luna-cloud-config-bus-client/luna-cloud-config-bus-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luna-cloud-config-bus-server/luna-cloud-config-bus-server.iml" filepath="$PROJECT_DIR$/luna-cloud-config-bus-server/luna-cloud-config-bus-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-cloud-config-server/luna-cloud-config-server.iml" filepath="$PROJECT_DIR$/luna-cloud-config-server/luna-cloud-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-config-client-node-I/luna-config-client-node-I.iml" filepath="$PROJECT_DIR$/luna-config-client-node-I/luna-config-client-node-I.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-consul-server/luna-consul-server.iml" filepath="$PROJECT_DIR$/luna-consul-server/luna-consul-server.iml" />

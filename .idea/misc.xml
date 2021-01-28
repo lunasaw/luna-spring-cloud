@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/luna-provider-payment-node-III/pom.xml" />
         <option value="$PROJECT_DIR$/luna-consumer-payment-node-III/pom.xml" />
+        <option value="$PROJECT_DIR$/luna-cloud-config-bus-client/pom.xml" />
       </list>
     </option>
   </component>

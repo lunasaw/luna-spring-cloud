@@ -5,8 +5,230 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_http_client_2_1_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_bus_2_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_context_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_core_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_bus_amqp_2_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_stream_rabbit_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_core_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_amqp_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/SpringCloud第2季.mmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597213385700.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597213583943.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597213711242.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597213783265.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597213855903.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597214225785.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597214560198.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597214602636.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597214699619.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597215611540.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597215639355.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597215666979.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597215801116.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597217986370.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597222225568.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597222341651.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597224961560.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597225177689.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597291856582.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597291942982.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597291981643.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597292154107.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597294710656.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597299306196.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597301105015.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597301247809.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597301299700.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597301356051.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597301396971.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597302314591.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597302449686.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597302605610.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597302719594.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597302855396.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597303059965.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597306855233.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597380885054.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597384290665.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597384344513.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597384362750.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597384508291.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597384554249.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597384873709.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597384916817.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597385089429.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597385250463.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597385267753.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597385486515.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597385762892.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597385892918.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597385959115.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597386516205.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597386638507.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597386816245.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597387609476.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597389321006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597389522738.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597467640971.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597468025532.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597468071030.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597468299249.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597468336180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597468904865.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597468944714.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597468986791.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597471683432.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597471750363.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597472029967.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597474348167.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597552633205.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597552755235.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597555271916.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597555381295.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597556913055.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597557620438.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597558323714.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597558486510.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597559672607.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597559733238.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597559787064.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597559829633.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597559871114.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597560126904.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597560156913.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597562601072.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597563769828.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597563898772.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597564084571.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597564241670.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597564397523.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597643368929.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597643414093.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597643478588.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597643504380.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597646139461.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597646186970.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597646308915.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597646809831.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597649646383.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597649915331.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597650236798.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597651086179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597651183100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597723463350.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597725204568.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597725365978.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597725535795.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597725567239.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597725597884.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597725703365.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597726446212.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597730112088.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597730581088.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597731525531.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597731630685.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597732035990.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597732238270.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597732562780.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597735215211.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597755893534.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597756097369.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597757341383.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597757718405.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597757747480.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597757775084.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597757959922.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597758227367.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597807821441.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597808181104.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597808385154.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597808678658.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597809107487.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597812518508.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597812716080.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597812799242.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597813020494.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597813917440.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597815675706.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597817544663.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597819388174.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597819546992.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597819613273.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597819976569.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597820015308.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597820393038.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597820534168.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597820662461.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597820926895.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597820943934.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597820987861.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597821156100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597821313361.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597821525073.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597821548056.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597821618735.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597821753416.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597822501876.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597822772165.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597822972448.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597900777242.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597900843477.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597901895200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597901945492.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597903188558.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597905761214.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597909285814.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597913169207.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597982664549.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597982738615.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597982788659.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597982858545.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597984908755.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597985305241.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597986227251.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597987564813.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597987722338.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597988040645.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597988061545.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597988262441.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597988768251.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597989003349.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597990431346.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597992817318.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597998982271.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597999156669.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597999227092.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/images/1597999292492.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/微服务SpringCloud笔记.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-cloud-config-bus-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-cloud-config-bus-client/src/main/java/com.luna.config/CloudConfigClientBusApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-cloud-config-bus-client/src/main/java/com/luna/config/controller/ConfigClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-cloud-config-bus-client/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-cloud-config-bus-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-cloud-config-bus-server/src/main/java/com/luna/config/CloudConfigServerBusApplicatiom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-cloud-config-bus-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-cloud-config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-cloud-config-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna-config-client-node-I/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-config-client-node-I/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +273,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config-center" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/luna-cloud-config-bus-client/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23330367" />
@@ -65,12 +287,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.luna.config.controller" />
+      <recent name="com.luna.config" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config-center" />
+      <recent name="$PROJECT_DIR$/luna-cloud-config-bus-client/src/main/resources" />
+      <recent name="$PROJECT_DIR$/luna-cloud-config-rabbitmq-server/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/luna-provider-eureka-hystrix-node/src/main/resources/Jmeter" />
+      <recent name="$PROJECT_DIR$/doc" />
+      <recent name="$PROJECT_DIR$/config-center" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -81,7 +307,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudConfigClientApplication">
+  <component name="RunManager" selected="Spring Boot.CloudConfigClientBusApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -137,6 +363,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CloudConfigClientBusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="luna-cloud-config-bus-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luna.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.config.CloudConfigClientBusApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CloudConfigServerApplicatiom" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="luna-cloud-config-server" />
       <extension name="coverage">
@@ -146,6 +385,14 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.config.CloudConfigServerApplicatiom" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudConfigServerBusApplicatiom" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="luna-cloud-config-bus-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.config.CloudConfigServerBusApplicatiom" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -351,9 +598,12 @@
       <item itemvalue="Spring Boot.CloudConfigServerApplicatiom" />
       <item itemvalue="JUnit.com.luna.config in luna-config-client-node-I" />
       <item itemvalue="Spring Boot.CloudConfigClientApplication" />
+      <item itemvalue="Spring Boot.CloudConfigClientBusApplication" />
+      <item itemvalue="Spring Boot.CloudConfigServerBusApplicatiom" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CloudConfigClientBusApplication" />
         <item itemvalue="JUnit.com.luna.config in luna-config-client-node-I" />
         <item itemvalue="Spring Boot.GateWayApplication" />
         <item itemvalue="JUnit.GetWayTest.testCreateTime" />
@@ -378,7 +628,7 @@
       <workItem from="1611723901645" duration="1134000" />
       <workItem from="1611725039797" duration="2002000" />
       <workItem from="1611727120829" duration="8175000" />
-      <workItem from="1611809609485" duration="3662000" />
+      <workItem from="1611809609485" duration="7902000" />
     </task>
     <task id="LOCAL-00001" summary=":memo: :tada: openFeign timeout control">
       <created>1611508311388</created>
@@ -499,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611812760898</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary=":memo: :tada:    config client">
+      <created>1611813530670</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611813530670</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,10 +779,10 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="25" key="#Project_Structure" timestamp="1611732391116">
+    <state x="320" y="25" key="#Project_Structure" timestamp="1611817961685">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="320" y="25" key="#Project_Structure/0.25.1920.992@0.25.1920.992" timestamp="1611732391116" />
+    <state x="320" y="25" key="#Project_Structure/0.25.1920.992@0.25.1920.992" timestamp="1611817961685" />
     <state x="628" y="296" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1611727844980">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -538,55 +795,59 @@
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="726" y="165" key="#com.intellij.ide.util.MemberChooser/0.25.1920.1055@0.25.1920.1055" timestamp="1611647848404" />
+    <state x="238" y="439" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1611819059404">
+      <screen x="0" y="25" width="1920" height="992" />
+    </state>
+    <state x="238" y="439" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.25.1920.992@0.25.1920.992" timestamp="1611819059404" />
     <state x="406" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611572253293">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="406" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.992@0.25.1920.992" timestamp="1611572253293" />
-    <state x="210" y="25" width="1500" height="958" key="CommitChangelistDialog2" timestamp="1611812760605">
+    <state x="210" y="25" width="1500" height="958" key="CommitChangelistDialog2" timestamp="1611813530461">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="207" y="65" width="1500" height="958" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649901083" />
-    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611812760605" />
-    <state width="1285" height="351" key="GridCell.Tab.0.bottom" timestamp="1611812768123">
+    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611813530461" />
+    <state width="1224" height="359" key="GridCell.Tab.0.bottom" timestamp="1611819163096">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1285" height="351" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611812768123" />
-    <state width="1285" height="351" key="GridCell.Tab.0.center" timestamp="1611812768122">
+    <state width="1224" height="359" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611819163096" />
+    <state width="1224" height="359" key="GridCell.Tab.0.center" timestamp="1611819163095">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1285" height="351" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611812768122" />
-    <state width="1285" height="351" key="GridCell.Tab.0.left" timestamp="1611812768121">
+    <state width="1224" height="359" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611819163095" />
+    <state width="1224" height="359" key="GridCell.Tab.0.left" timestamp="1611819163095">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1285" height="351" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611812768121" />
-    <state width="1285" height="351" key="GridCell.Tab.0.right" timestamp="1611812768122">
+    <state width="1224" height="359" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611819163095" />
+    <state width="1224" height="359" key="GridCell.Tab.0.right" timestamp="1611819163096">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1285" height="351" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611812768122" />
-    <state width="1285" height="351" key="GridCell.Tab.1.bottom" timestamp="1611812768124">
+    <state width="1224" height="359" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611819163096" />
+    <state width="1224" height="359" key="GridCell.Tab.1.bottom" timestamp="1611819163097">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1285" height="351" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611812768124" />
-    <state width="1285" height="351" key="GridCell.Tab.1.center" timestamp="1611812768124">
+    <state width="1224" height="359" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611819163097" />
+    <state width="1224" height="359" key="GridCell.Tab.1.center" timestamp="1611819163096">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1285" height="351" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611812768124" />
-    <state width="1285" height="351" key="GridCell.Tab.1.left" timestamp="1611812768123">
+    <state width="1224" height="359" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611819163096" />
+    <state width="1224" height="359" key="GridCell.Tab.1.left" timestamp="1611819163096">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1285" height="351" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611812768123" />
-    <state width="1285" height="351" key="GridCell.Tab.1.right" timestamp="1611812768124">
+    <state width="1224" height="359" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611819163096" />
+    <state width="1224" height="359" key="GridCell.Tab.1.right" timestamp="1611819163097">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1285" height="351" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611812768124" />
+    <state width="1224" height="359" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611819163097" />
     <state x="398" y="300" width="1123" height="617" key="Registry" timestamp="1611507232485">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -595,11 +856,11 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="202" y="69" width="1510" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1611727912850" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611812762228">
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611813531851">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="460" y="206" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649903052" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611812762228" />
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611813531851" />
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611505198412">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -608,10 +869,10 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="586" y="175" width="862" height="728" key="find.popup/0.25.1920.992@0.25.1920.992" timestamp="1611725503328" />
-    <state x="0" y="81" key="new project wizard" timestamp="1611812059992">
+    <state x="0" y="81" key="new project wizard" timestamp="1611816911986">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="0" y="81" key="new project wizard/0.25.1920.992@0.25.1920.992" timestamp="1611812059992" />
+    <state x="0" y="81" key="new project wizard/0.25.1920.992@0.25.1920.992" timestamp="1611816911986" />
     <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup" timestamp="1611810226399">
       <screen x="0" y="25" width="1920" height="992" />
     </state>

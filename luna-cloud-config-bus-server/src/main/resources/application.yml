@@ -1,0 +1,53 @@
+server:
+  port: 7021
+  servlet:
+    context-path: /config-server
+
+spring:
+  application:
+    name: luna-cloud-config-server  # 注册进eureka Server 的微服务名
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/czy1024/luna-spring-cloud # github 仓库位置
+          ignore-local-ssh-settings: true
+          #注意的是private-key后面有个|别忘记 私钥粘贴后，加一行
+          privateKey: |   #这个地方复制你的RSA密码，记得这里有个| 别忘了
+            -----BEGIN OPENSSH PRIVATE KEY-----
+
+            -----END OPENSSH PRIVATE KEY-----
+          ## 搜索目录
+          search-paths:
+            - luna-config-center
+          # 读取的分支
+          label: master
+
+  # rabbitMq的相关配置
+  rabbitmq:
+    host: 192.168.1.100
+    port: 5672  # 这里没错，虽然rabbitMQ网页是 15672
+    username: luna
+    password: czy1024
+# rabbitmq 的相关配置2 暴露bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
+
+eureka:
+  instance:
+    instance-id: luna-cloud-config-server
+    # 访问路径IP显示
+    prefer-ip-address: true
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+      # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eurekanodei.com:7001/eureka-server/eureka/
+      #defaultZone: http://eurekanodeii.com:7002/eureka-server/eureka/,http://eurekanodei.com:7001/eureka-server/eureka/
+
