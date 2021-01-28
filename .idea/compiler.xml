@@ -8,11 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="luna-provider-payment-node-IIII" />
+        <module name="luna-config-client-node-II" />
         <module name="luna-provider-zookeeper-node" />
         <module name="luna-consumer-eureka-node-I" />
         <module name="luna-cloud-config-server" />
         <module name="luna-eureka-server-node-I" />
-        <module name="luna-cloud-config-bus-client" />
         <module name="luna-config-client-node-I" />
         <module name="luna-provider-consul-node" />
         <module name="luna-consumer-eureka-openfeign-hystrix-node" />
@@ -23,19 +23,23 @@
         <module name="luna-consumer-eureka-hystrix-dashboard-node" />
         <module name="luna-provider-eureka-node-II" />
         <module name="luna-gateway-eureka-node" />
+        <module name="luna-cloud-config-bus-client-node-I" />
         <module name="luna-consumer-eureka-openfeign-node" />
         <module name="luna-consumer-eureka-node-II" />
         <module name="luna-cloud-config-bus-server" />
         <module name="luna-consumer-zookeeper-node" />
         <module name="luna-consumer-consul-node" />
+        <module name="luna-cloud-config-bus-client-node-II" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="luna-api-commons" target="1.8" />
-      <module name="luna-cloud-config-bus-client" target="1.8" />
+      <module name="luna-cloud-config-bus-client-node-I" target="1.8" />
+      <module name="luna-cloud-config-bus-client-node-II" target="1.8" />
       <module name="luna-cloud-config-bus-server" target="1.8" />
       <module name="luna-cloud-config-server" target="1.8" />
       <module name="luna-config-client-node-I" target="1.8" />
+      <module name="luna-config-client-node-II" target="1.8" />
       <module name="luna-consumer-consul-node" target="1.8" />
       <module name="luna-consumer-eureka-hystrix-dashboard-node" target="1.8" />
       <module name="luna-consumer-eureka-node-I" target="1.8" />

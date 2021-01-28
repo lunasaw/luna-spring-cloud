@@ -26,8 +26,10 @@
         <module>luna-gateway-eureka-node</module>
         <module>luna-cloud-config-server</module>
         <module>luna-config-client-node-I</module>
+        <module>luna-config-client-node-II</module>
         <module>luna-cloud-config-bus-server</module>
-        <module>luna-cloud-config-bus-client</module>
+        <module>luna-cloud-config-bus-client-node-I</module>
+        <module>luna-cloud-config-bus-client-node-II</module>
     </modules>
     <packaging>pom</packaging>
 

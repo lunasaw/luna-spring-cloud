@@ -26,9 +26,12 @@ isczy.tk luna-spring-cloud
 - luna-eureka-server-node-II:7002
 
 - luna-cloud-config-server:7011 eureka client 
-- luna-cloud-config-bus-server:7021  eureka client rabbitmq
 - luna-cloud-config-client-node-I:7012 eureka client 
-- luna-cloud-config-bus-client:7022 eureka client rabbitmq
+- luna-cloud-config-client-node-II:7013 eureka client 
+
+- luna-cloud-config-bus-server:7021  eureka client rabbitmq
+- luna-cloud-config-bus-client-node-I:7022 eureka client rabbitmq
+- luna-cloud-config-bus-client-node-II:7023 eureka client rabbitmq
 
 # 域名映射
 127.0.0.1 eurekanodeI.com

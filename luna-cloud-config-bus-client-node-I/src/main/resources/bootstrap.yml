@@ -1,5 +1,5 @@
 server:
-  port: 7012
+  port: 7022
   servlet:
     context-path: /config-client
 
@@ -12,8 +12,14 @@ spring:
       label: master # 分支名称
       name: config # 配置文件名称，文件也可以是client-config-dev.yml这种格式的，这里就写 client-config
       profile: dev # 使用配置环境
-      uri: http://192.168.1.106:7011/config-server # config Server 地址
+      uri: http://192.168.1.106:7021/config-server # config Server 地址
       # 综合上面四个 即读取配置文件地址为： http://192.168.1.106:7003/config-server/master/config-dev.yml
+  # rabbitMq的相关配置
+  rabbitmq:
+    host: 192.168.1.100
+    port: 5672
+    username: luna
+    password: czy1024
 
 eureka:
   instance:
