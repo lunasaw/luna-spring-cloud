@@ -25,6 +25,10 @@ isczy.tk luna-spring-cloud
 - luna-eureka-server-node-I:7001 
 - luna-eureka-server-node-II:7002
 
+- luna-cloud-config-server:7003
+- luna-cloud-config-client-node-I:7004
+- luna-cloud-config-client:7005
+
 # 域名映射
 127.0.0.1 eurekanodeI.com
 127.0.0.1 eurekanodeII.com

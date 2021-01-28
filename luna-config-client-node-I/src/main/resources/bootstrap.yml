@@ -1,0 +1,31 @@
+server:
+  port: 7004
+  servlet:
+    context-path: /config-client
+
+spring:
+  application:
+    name: luna-cloud-config-client
+  cloud:
+    # config 客户端配置
+    config:
+      label: master # 分支名称
+      name: config # 配置文件名称，文件也可以是client-config-dev.yml这种格式的，这里就写 client-config
+      profile: dev # 使用配置环境
+      uri: http://192.168.1.106:7003/config-server # config Server 地址
+      # 综合上面四个 即读取配置文件地址为： http://192.168.1.106:7003/config-server/master/config-dev.yml
+
+eureka:
+  instance:
+    instance-id: luna-cloud-config-server
+    # 访问路径IP显示
+    prefer-ip-address: true
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+      # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eurekanodei.com:7001/eureka-server/eureka/
+      #defaultZone: http://eurekanodeii.com:7002/eureka-server/eureka/,http://eurekanodei.com:7001/eureka-server/eureka/

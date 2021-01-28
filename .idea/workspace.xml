@@ -5,24 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_54.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jzlib_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_1_3_201810200350_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_5_1_3_201810200350_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-cloud-config-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-cloud-config-server/src/main/java/com/luna/config/CloudConfigServerApplicatiom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-cloud-config-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-config-center/config-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-config-center/config-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-config-center/config-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-config-client-node-I/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-config-client-node-I/src/main/java/com/luna/config/CloudConfigClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-config-client-node-I/src/main/java/com/luna/config/controller/ConfigClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-config-client-node-I/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-cloud-config-server/src/main/java/com/luna/config/CloudConfigServerApplicatiom.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-cloud-config-server/src/main/java/com/luna/config/CloudConfigServerApplicatiom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-cloud-config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-cloud-config-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +75,9 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config-center" />
       <recent name="$PROJECT_DIR$" />
@@ -95,7 +92,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloudConfigServerApplicatiom">
+  <component name="RunManager" selected="Spring Boot.CloudConfigClientApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -119,6 +116,34 @@
       <option name="MAIN_CLASS_NAME" value="com.luna.gateway.GetWayTest" />
       <option name="METHOD_NAME" value="testCreateTime" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.luna.config in luna-config-client-node-I" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="luna-config-client-node-I" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luna.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luna.config" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudConfigClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="luna-config-client-node-I" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luna.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luna.config.CloudConfigClientApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -335,9 +360,12 @@
       <item itemvalue="Spring Boot.ConsumerEurekaApplicationNodeOne" />
       <item itemvalue="Spring Boot.GateWayApplication" />
       <item itemvalue="Spring Boot.CloudConfigServerApplicatiom" />
+      <item itemvalue="JUnit.com.luna.config in luna-config-client-node-I" />
+      <item itemvalue="Spring Boot.CloudConfigClientApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.luna.config in luna-config-client-node-I" />
         <item itemvalue="Spring Boot.GateWayApplication" />
         <item itemvalue="JUnit.GetWayTest.testCreateTime" />
         <item itemvalue="Spring Boot.ConsumerEurekaApplicationNodeOne" />
@@ -361,7 +389,7 @@
       <workItem from="1611723901645" duration="1134000" />
       <workItem from="1611725039797" duration="2002000" />
       <workItem from="1611727120829" duration="8175000" />
-      <workItem from="1611809609485" duration="594000" />
+      <workItem from="1611809609485" duration="2933000" />
     </task>
     <task id="LOCAL-00001" summary=":memo: :tada: openFeign timeout control">
       <created>1611508311388</created>
@@ -468,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611809724001</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary=":memo: :tada:    config server">
+      <created>1611810281826</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1611810281826</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +520,8 @@
     <MESSAGE value=":memo: :tada:    gateway router" />
     <MESSAGE value=":memo: :tada:    gateway router load balance" />
     <MESSAGE value=":memo: :tada:    gateway router predicates" />
-    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada:    gateway router predicates" />
+    <MESSAGE value=":memo: :tada:    config server" />
+    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada:    config server" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -509,51 +545,51 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="406" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.992@0.25.1920.992" timestamp="1611572253293" />
-    <state x="210" y="25" width="1500" height="958" key="CommitChangelistDialog2" timestamp="1611809723762">
+    <state x="210" y="25" width="1500" height="958" key="CommitChangelistDialog2" timestamp="1611810281508">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="207" y="65" width="1500" height="958" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649901083" />
-    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611809723762" />
-    <state width="1252" height="271" key="GridCell.Tab.0.bottom" timestamp="1611737509774">
+    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1611810281508" />
+    <state width="1862" height="292" key="GridCell.Tab.0.bottom" timestamp="1611812506681">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1252" height="271" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611737509774" />
-    <state width="1252" height="271" key="GridCell.Tab.0.center" timestamp="1611737509773">
+    <state width="1862" height="292" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611812506681" />
+    <state width="1862" height="292" key="GridCell.Tab.0.center" timestamp="1611812506680">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1252" height="271" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611737509773" />
-    <state width="1252" height="271" key="GridCell.Tab.0.left" timestamp="1611737509772">
+    <state width="1862" height="292" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1611812506680" />
+    <state width="1862" height="292" key="GridCell.Tab.0.left" timestamp="1611812506679">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1252" height="271" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611737509772" />
-    <state width="1252" height="271" key="GridCell.Tab.0.right" timestamp="1611737509773">
+    <state width="1862" height="292" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1611812506679" />
+    <state width="1862" height="292" key="GridCell.Tab.0.right" timestamp="1611812506680">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1252" height="271" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611737509773" />
-    <state width="1252" height="271" key="GridCell.Tab.1.bottom" timestamp="1611737509776">
+    <state width="1862" height="292" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1611812506680" />
+    <state width="1862" height="292" key="GridCell.Tab.1.bottom" timestamp="1611812506682">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1252" height="271" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611737509776" />
-    <state width="1252" height="271" key="GridCell.Tab.1.center" timestamp="1611737509775">
+    <state width="1862" height="292" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1611812506682" />
+    <state width="1862" height="292" key="GridCell.Tab.1.center" timestamp="1611812506681">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1252" height="271" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611737509775" />
-    <state width="1252" height="271" key="GridCell.Tab.1.left" timestamp="1611737509774">
+    <state width="1862" height="292" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1611812506681" />
+    <state width="1862" height="292" key="GridCell.Tab.1.left" timestamp="1611812506681">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1252" height="271" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611737509774" />
-    <state width="1252" height="271" key="GridCell.Tab.1.right" timestamp="1611737509775">
+    <state width="1862" height="292" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1611812506681" />
+    <state width="1862" height="292" key="GridCell.Tab.1.right" timestamp="1611812506682">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1285" height="263" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1252" height="271" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611737509775" />
+    <state width="1862" height="292" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1611812506682" />
     <state x="398" y="300" width="1123" height="617" key="Registry" timestamp="1611507232485">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -562,11 +598,11 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="202" y="69" width="1510" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1611727912850" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611809725984">
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1611810284003">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="460" y="206" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649903052" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611809725984" />
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1611810284003" />
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611505198412">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -575,14 +611,14 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="586" y="175" width="862" height="728" key="find.popup/0.25.1920.992@0.25.1920.992" timestamp="1611725503328" />
-    <state x="0" y="104" key="new project wizard" timestamp="1611809965167">
+    <state x="0" y="81" key="new project wizard" timestamp="1611812059992">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="0" y="104" key="new project wizard/0.25.1920.992@0.25.1920.992" timestamp="1611809965167" />
-    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup" timestamp="1611725446594">
+    <state x="0" y="81" key="new project wizard/0.25.1920.992@0.25.1920.992" timestamp="1611812059992" />
+    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup" timestamp="1611810226399">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="541" y="25" width="838" height="1098" key="search.everywhere.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1611651300036" />
-    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1920.992@0.25.1920.992" timestamp="1611725446594" />
+    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1920.992@0.25.1920.992" timestamp="1611810226399" />
   </component>
 </project>

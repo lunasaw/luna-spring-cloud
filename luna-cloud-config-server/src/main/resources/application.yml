@@ -1,5 +1,8 @@
 server:
   port: 7003
+  servlet:
+    context-path: /config-server
+
 spring:
   application:
     name: luna-cloud-config-server  # 注册进eureka Server 的微服务名
@@ -7,12 +10,19 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:czy1024/luna-spring-cloud.git # github 仓库位置
+          uri: https://github.com/czy1024/luna-spring-cloud # github 仓库位置
+          ignore-local-ssh-settings: true
+          #注意的是private-key后面有个|别忘记 私钥粘贴后，加一行
+          privateKey: |   #这个地方复制你的RSA密码，记得这里有个| 别忘了
+            -----BEGIN OPENSSH PRIVATE KEY-----
+
+            -----END OPENSSH PRIVATE KEY-----
           ## 搜索目录
           search-paths:
             - luna-config-center
           # 读取的分支
           label: master
+
 eureka:
   instance:
     instance-id: luna-cloud-config-server
