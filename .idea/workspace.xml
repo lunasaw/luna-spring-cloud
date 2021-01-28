@@ -78,15 +78,13 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.GetWayTest.testCreateTime">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -288,6 +286,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.GetWayTest.testCreateTime" />
       <item itemvalue="Spring Boot.ConsumerConsulApplication" />
       <item itemvalue="Spring Boot.ConsumerEurekaApplicationHystrix" />
       <item itemvalue="Spring Boot.ConsumerEurekaApplicationNodeThree" />
@@ -303,7 +302,6 @@
       <item itemvalue="Spring Boot.ConsumerEurekaApplicationHystrixDashboard" />
       <item itemvalue="Spring Boot.ConsumerEurekaApplicationNodeOne" />
       <item itemvalue="Spring Boot.GateWayApplication" />
-      <item itemvalue="JUnit.GetWayTest.testCreateTime" />
     </list>
     <recent_temporary>
       <list>
