@@ -12,6 +12,10 @@
     <artifactId>luna-consumer-eureka-stream-node-I</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
         <!-- stream-rabbit -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

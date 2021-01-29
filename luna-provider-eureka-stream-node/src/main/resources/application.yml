@@ -24,6 +24,12 @@ spring:
           content-type: application/json # 设置消息类型，本次为json，文本则设置“text/plain”
           binder: defaultRabbit # 设置要绑定的消息服务的具体设置
 
+  zipkin:
+    base-url: http://192.168.1.106:9411  # zipkin 地址
+  sleuth:
+    sampler:
+      # 采样率值 介于0-1之间 ，1表示全部采集
+      probability: 1
 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型

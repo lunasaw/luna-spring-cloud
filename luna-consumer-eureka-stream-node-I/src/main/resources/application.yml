@@ -23,6 +23,15 @@ spring:
           destination: lunaExchange  # 表示要使用的Exchange名称
           content-type: application/json  # 设置消息类型，本次是json，文本是 "text/plain"
           binder: defaultRabbit  # 设置要绑定的消息服务的具体配置
+          group: luna # 自定义分组
+
+  zipkin:
+    base-url: http://192.168.1.106:9411  # zipkin 地址
+  sleuth:
+    sampler:
+      # 采样率值 介于0-1之间 ，1表示全部采集
+      probability: 1
+
 eureka:
   instance:
     instance-id: luna-consumer-payment-stream-node-I
