@@ -1,0 +1,80 @@
+server:
+  port: 8011
+  servlet:
+    context-path: /provider-payment
+
+spring:
+  application:
+    name: luna-provider-payment
+  cloud:
+    stream:
+      binders: # 在此处配置要绑定的rabbitmq的服务信息；
+        defaultRabbit: # 表示定义的名称，用于于binding整合
+          type: rabbit # 消息组件类型
+          environment: # 设置rabbitmq的相关的环境配置
+            spring:
+              rabbitmq:
+                host: 192.168.1.100
+                port: 5672
+                username: luna
+                password: czy1024
+      bindings: # 服务的整合处理
+        output: # 这个名字是一个通道的名称
+          destination: lunaExchange # 表示要使用的Exchange名称定义
+          content-type: application/json # 设置消息类型，本次为json，文本则设置“text/plain”
+          binder: defaultRabbit # 设置要绑定的消息服务的具体设置
+
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver              # mysql驱动包
+    url: jdbc:mysql://sh1.k9s.run:22311/luna-spring-cloud?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password:
+
+eureka:
+  instance:
+    instance-id: luna-provider-eureka-srteam-node
+    prefer-ip-address: true
+    # 客户端向服务端发送心跳包
+    #lease-renewal-interval-in-seconds: 1
+    # 客户端最后一次收到服务端心跳包后的最长等待时间
+    #lease-expiration-duration-in-seconds: 3
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+      # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eurekanodei.com:7001/eureka-server/eureka/
+      #defaultZone: http://eurekanodeii.com:7002/eureka-server/eureka/,http://eurekanodei.com:7001/eureka-server/eureka/
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.luna.commons.entities    # 所有Entity别名类所在包
+
+
+management:
+  endpoint:
+    health:
+      # 展示详细信息
+      show-details: always
+      # 开启远程关闭
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# 自定义展示信息
+info:
+  app:
+    name: luna-provider-payment
+    java: jdk-1.8
+    encodeing: UTF-8
+  author: luna
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$

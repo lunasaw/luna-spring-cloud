@@ -16,6 +16,7 @@
     <file url="file://$PROJECT_DIR$/luna-consumer-eureka-node-II/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luna-consumer-eureka-openfeign-hystrix-node/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luna-consumer-eureka-openfeign-node/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-consumer-eureka-stream-node/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luna-consumer-zookeeper-node/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luna-consumer-zookeeper-node/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luna-eureka-server-node-I/src/main/java" charset="UTF-8" />
@@ -30,6 +31,7 @@
     <file url="file://$PROJECT_DIR$/luna-provider-eureka-node-I/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luna-provider-eureka-node-II/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luna-provider-eureka-node-II/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/luna-provider-eureka-stream-node/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luna-provider-zookeeper-node/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/luna-provider-zookeeper-node/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
