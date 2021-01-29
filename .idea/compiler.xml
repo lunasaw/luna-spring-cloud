@@ -23,15 +23,16 @@
         <module name="luna-provider-eureka-hystrix-node" />
         <module name="luna-eureka-server-node-II" />
         <module name="luna-provider-eureka-stream-node" />
+        <module name="luna-consumer-eureka-stream-node-II" />
         <module name="luna-api-commons" />
         <module name="luna-consumer-eureka-hystrix-dashboard-node" />
         <module name="luna-provider-eureka-node-II" />
         <module name="luna-gateway-eureka-node" />
         <module name="luna-cloud-config-bus-client-node-I" />
         <module name="luna-consumer-eureka-openfeign-node" />
-        <module name="luna-consumer-eureka-stream-node" />
         <module name="luna-cloud-config-bus-server" />
         <module name="luna-consumer-zookeeper-node" />
+        <module name="luna-consumer-eureka-stream-node-I" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -48,7 +49,8 @@
       <module name="luna-consumer-eureka-node-II" target="1.8" />
       <module name="luna-consumer-eureka-openfeign-hystrix-node" target="1.8" />
       <module name="luna-consumer-eureka-openfeign-node" target="1.8" />
-      <module name="luna-consumer-eureka-stream-node" target="1.8" />
+      <module name="luna-consumer-eureka-stream-node-I" target="1.8" />
+      <module name="luna-consumer-eureka-stream-node-II" target="1.8" />
       <module name="luna-consumer-zookeeper-node" target="1.8" />
       <module name="luna-eureka-server-node-I" target="1.8" />
       <module name="luna-eureka-server-node-II" target="1.8" />

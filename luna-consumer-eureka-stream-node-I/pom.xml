@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>luna-consumer-eureka-stream-node</artifactId>
+    <artifactId>luna-consumer-eureka-stream-node-I</artifactId>
 
     <dependencies>
         <!-- stream-rabbit -->

@@ -22,7 +22,8 @@
         <module>luna-consumer-eureka-hystrix-dashboard-node</module>
         <module>luna-consumer-zookeeper-node</module>
         <module>luna-consumer-consul-node</module>
-        <module>luna-consumer-eureka-stream-node</module>
+        <module>luna-consumer-eureka-stream-node-I</module>
+        <module>luna-consumer-eureka-stream-node-II</module>
         <module>luna-eureka-server-node-I</module>
         <module>luna-eureka-server-node-II</module>
         <module>luna-gateway-eureka-node</module>

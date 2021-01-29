@@ -1,0 +1,41 @@
+server:
+  port: 8012
+  servlet:
+    context-path: /consumer-payment
+
+spring:
+  application:
+    name: luna-consumer-payment-stream
+  cloud:
+    stream:
+      binders: # 在次配置要绑定的rabbitMQ的服务信息
+        defaultRabbit: # 表示定义的名称，用于和binding整合
+          type: rabbit  # 消息组件类型
+          environment: # 设置rabbitmq的相关环境配置
+            spring:
+              rabbitmq:
+                host: 192.168.1.100
+                port: 5672
+                username: luna
+                password: czy1024
+      bindings: # 服务的整合处理
+        input: # 表示是消费者，这里是唯一和生产者不同的地方，向rabbitMQ发送消息
+          destination: lunaExchange  # 表示要使用的Exchange名称
+          content-type: application/json  # 设置消息类型，本次是json，文本是 "text/plain"
+          binder: defaultRabbit  # 设置要绑定的消息服务的具体配置
+eureka:
+  instance:
+    instance-id: luna-consumer-payment-stream-node-I
+    # 访问路径IP显示
+    prefer-ip-address: true
+  client:
+    # 注册进 Eureka 的服务中心
+    register-with-eureka: true
+    # 检索 服务中心 的其它服务
+    fetch-registry: true
+    service-url:
+      # 设置与 Eureka Server 交互的地址
+      defaultZone: http://eurekanodei.com:7001/eureka-server/eureka/
+      #defaultZone: http://eurekanodeii.com:7002/eureka-server/eureka/,http://eurekanodei.com:7001/eureka-server/eureka/
+
+
