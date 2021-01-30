@@ -1,5 +1,5 @@
 server:
-  port: 8011
+  port: 8025
   servlet:
     context-path: /provider-payment
 

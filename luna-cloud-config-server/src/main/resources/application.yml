@@ -10,7 +10,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/czy1024/luna-spring-cloud # github 仓库位置
+          uri: https://github.com/czy1024/luna-cloud-config.git # github 仓库位置
           ignore-local-ssh-settings: true
           #注意的是private-key后面有个|别忘记 私钥粘贴后，加一行
           privateKey: |   #这个地方复制你的RSA密码，记得这里有个| 别忘了

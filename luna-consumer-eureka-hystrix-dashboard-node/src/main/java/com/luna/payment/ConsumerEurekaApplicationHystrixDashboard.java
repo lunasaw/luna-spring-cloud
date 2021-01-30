@@ -8,6 +8,8 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 /**
  * @author luna
  * @date 2020-02-17 21:13
+ * http://server:port/context-path/hystrix
+ *
  */
 @SpringBootApplication
 @EnableDiscoveryClient
