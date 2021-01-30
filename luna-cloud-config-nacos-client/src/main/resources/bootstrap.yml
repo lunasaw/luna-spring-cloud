@@ -1,0 +1,41 @@
+server:
+  port: 9011
+  servlet:
+    context-path: /config-server
+
+spring:
+  application:
+    name: nacos-config-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.100:8848 # nacos作为服务注册中心
+      config:
+        server-addr: 192.168.1.100:8848 # nacos作为服务配置中心
+        file-extension: yaml # 指定yaml 格式的配置
+        group: DEV_GROUP
+        namespace: e209507c-1661-4687-8760-5b177b7f4c97
+
+management:
+  endpoint:
+    health:
+      # 展示详细信息
+      show-details: always
+      # 开启远程关闭
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# 自定义展示信息
+info:
+  app:
+    name: nacos-config-server
+    java: jdk-1.8
+    encodeing: UTF-8
+  author: luna
+  build:
+    artifactId: $project.artifactId$
+    version: $project.version$

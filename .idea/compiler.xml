@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="luna-cloud-config-nacos-client" />
         <module name="luna-provider-payment-node-IIII" />
         <module name="luna-config-client-node-II" />
         <module name="luna-provider-zookeeper-node" />
@@ -44,7 +45,9 @@
       <module name="luna-cloud-config-bus-client-node-I" target="1.8" />
       <module name="luna-cloud-config-bus-client-node-II" target="1.8" />
       <module name="luna-cloud-config-bus-server" target="1.8" />
+      <module name="luna-cloud-config-nacos-client" target="1.8" />
       <module name="luna-cloud-config-server" target="1.8" />
+      <module name="luna-cloud-nacos-config-client" target="1.8" />
       <module name="luna-config-client-node-I" target="1.8" />
       <module name="luna-config-client-node-II" target="1.8" />
       <module name="luna-consumer-consul-node" target="1.8" />

@@ -39,6 +39,9 @@ isczy.tk luna-spring-cloud
 - luna-cloud-config-bus-client-node-I:7022 eureka client rabbitmq
 - luna-cloud-config-bus-client-node-II:7023 eureka client rabbitmq
 
+### nacos config
+- luna-cloud-config-nacos-server:9011 nacos client 
+
 # 域名映射
 127.0.0.1 eurekanodeI.com
 127.0.0.1 eurekanodeII.com

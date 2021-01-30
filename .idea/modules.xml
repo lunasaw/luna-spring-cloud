@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/luna-cloud-config-bus-client-node-I/luna-cloud-config-bus-client-node-I.iml" filepath="$PROJECT_DIR$/luna-cloud-config-bus-client-node-I/luna-cloud-config-bus-client-node-I.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-cloud-config-bus-client-node-II/luna-cloud-config-bus-client-node-II.iml" filepath="$PROJECT_DIR$/luna-cloud-config-bus-client-node-II/luna-cloud-config-bus-client-node-II.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-cloud-config-bus-server/luna-cloud-config-bus-server.iml" filepath="$PROJECT_DIR$/luna-cloud-config-bus-server/luna-cloud-config-bus-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luna-cloud-config-nacos-client/luna-cloud-config-nacos-client.iml" filepath="$PROJECT_DIR$/luna-cloud-config-nacos-client/luna-cloud-config-nacos-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-cloud-config-server/luna-cloud-config-server.iml" filepath="$PROJECT_DIR$/luna-cloud-config-server/luna-cloud-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-config-client-node-I/luna-config-client-node-I.iml" filepath="$PROJECT_DIR$/luna-config-client-node-I/luna-config-client-node-I.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-config-client-node-II/luna-config-client-node-II.iml" filepath="$PROJECT_DIR$/luna-config-client-node-II/luna-config-client-node-II.iml" />

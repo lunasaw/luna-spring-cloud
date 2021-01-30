@@ -35,6 +35,7 @@
         <module>luna-config-client-node-I</module>
         <module>luna-config-client-node-II</module>
         <module>luna-cloud-config-bus-server</module>
+        <module>luna-cloud-config-nacos-client</module>
         <module>luna-cloud-config-bus-client-node-I</module>
         <module>luna-cloud-config-bus-client-node-II</module>
     </modules>
