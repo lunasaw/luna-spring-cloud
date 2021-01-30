@@ -1,0 +1,14 @@
+server:
+  port: 9006
+  servlet:
+    context-path: /consumer-payment
+
+spring:
+  application:
+    name: luna-consumer-payment
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.100:8848
+
+

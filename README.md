@@ -6,13 +6,16 @@ isczy.tk luna-spring-cloud
 - Luna 
 
 # port
+
+### provider
 - luna-provider-eureka-node-I:8001 eureka client 
 - luna-provider-eureka-node-II:8002 eureka client 
 - luna-provider-zookeeper-node:8003 zookeeper client
 - luna-provider-consul-node:8004 consul client 
 - luna-provider-eureka-hystrix-node:8005 eureka client hystrix
-- luna-provider-eureka-hystrix-node:8011 eureka client rabbitmq
-
+- luna-provider-eureka-stream-node:8011 eureka client stream rabbitmq
+- luna-provider-nacos-node-I:9001 nacos client 
+### consumer
 - luna-consumer-eureka-node-I:8006 eureka client restTemplate
 - luna-consumer-eureka-node-II:8007 eureka client restTemplate
 - luna-consumer-eureka-openfeign-node:8009 eureka client openfeign
@@ -20,11 +23,14 @@ isczy.tk luna-spring-cloud
 - luna-consumer-eureka-hystrix-dashboard-node:8012 eureka client hystrix-dashboard
 - luna-consumer-zookeeper-node:8008 zookeeper client restTemplate
 - luna-consumer-consul-node:8010 consul client restTemplate
+- luna-consumer-eureka-stream-node-I:8013 eureka client stream rabbitmq
+- luna-consumer-eureka-stream-node-II:8014 eureka client stream rabbitmq
 
-
+### discovery client
 - luna-eureka-server-node-I:7001 
 - luna-eureka-server-node-II:7002
 
+### cloud config
 - luna-cloud-config-server:7011 eureka client 
 - luna-cloud-config-client-node-I:7012 eureka client 
 - luna-cloud-config-client-node-II:7013 eureka client 

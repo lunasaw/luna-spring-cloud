@@ -13,11 +13,14 @@
         <module name="luna-cloud-config-server" />
         <module name="luna-eureka-server-node-I" />
         <module name="luna-config-client-node-I" />
+        <module name="luna-provider-nacos-node-I" />
+        <module name="luna-consumer-nacos-node-I" />
         <module name="luna-consumer-eureka-openfeign-hystrix-node" />
         <module name="luna-provider-eureka-node-I" />
         <module name="luna-consumer-eureka-node-II" />
         <module name="luna-consumer-consul-node" />
         <module name="luna-cloud-config-bus-client-node-II" />
+        <module name="luna-provider-nacos-node-II" />
         <module name="luna-consumer-eureka-node-I" />
         <module name="luna-provider-consul-node" />
         <module name="luna-provider-eureka-hystrix-node" />
@@ -30,6 +33,7 @@
         <module name="luna-gateway-eureka-node" />
         <module name="luna-cloud-config-bus-client-node-I" />
         <module name="luna-consumer-eureka-openfeign-node" />
+        <module name="luna-consumer-nacos-node-II" />
         <module name="luna-cloud-config-bus-server" />
         <module name="luna-consumer-zookeeper-node" />
         <module name="luna-consumer-eureka-stream-node-I" />
@@ -51,6 +55,8 @@
       <module name="luna-consumer-eureka-openfeign-node" target="1.8" />
       <module name="luna-consumer-eureka-stream-node-I" target="1.8" />
       <module name="luna-consumer-eureka-stream-node-II" target="1.8" />
+      <module name="luna-consumer-nacos-node-I" target="1.8" />
+      <module name="luna-consumer-nacos-node-II" target="1.8" />
       <module name="luna-consumer-zookeeper-node" target="1.8" />
       <module name="luna-eureka-server-node-I" target="1.8" />
       <module name="luna-eureka-server-node-II" target="1.8" />
@@ -60,6 +66,8 @@
       <module name="luna-provider-eureka-node-I" target="1.8" />
       <module name="luna-provider-eureka-node-II" target="1.8" />
       <module name="luna-provider-eureka-stream-node" target="1.8" />
+      <module name="luna-provider-nacos-node-I" target="1.8" />
+      <module name="luna-provider-nacos-node-II" target="1.8" />
       <module name="luna-provider-zookeeper-node" target="1.8" />
       <module name="luna-spring-cloud" target="1.8" />
     </bytecodeTargetLevel>

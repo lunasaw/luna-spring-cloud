@@ -1,19 +1,14 @@
 server:
-  port: 8004
+  port: 9002
   servlet:
     context-path: /provider-payment
 spring:
   application:
     name: luna-provider-payment
-
   cloud:
-    consul:
-      host: 192.168.1.100
-      port: 8500
-      discovery: # 指定注册对外暴露的服务名称
-        service-name: ${spring.application.name}
-        heartbeat:
-          enabled: true
+    nacos:
+      discovery:
+        server-addr: 192.168.1.100:8848
 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
@@ -22,10 +17,10 @@ spring:
     username: root
     password:
 
-
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.luna.commons.entities    # 所有Entity别名类所在包
+
 
 management:
   endpoint:

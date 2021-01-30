@@ -9,7 +9,7 @@ spring:
 
   cloud:
     consul:
-      host: 192.168.1.107
+      host: 192.168.1.100
       port: 8500
       discovery: # 指定注册对外暴露的服务名称
         service-name: ${spring.application.name}
