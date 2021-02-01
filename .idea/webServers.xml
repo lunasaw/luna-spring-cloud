@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1ca90aac-1a60-4aa0-8d8d-5b7485abc3d2" name="luna-local-centos">
+        <fileTransfer accessType="SFTP" host="192.168.1.101" port="22" sshConfigId="50cfb746-61ff-4b79-9ff2-ae23191a97f3" sshConfig="root@192.168.1.101:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

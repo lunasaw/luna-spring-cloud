@@ -1,15 +1,20 @@
 server:
-  port: 9001
+  port: 9003
   servlet:
     context-path: /provider-payment
 spring:
   application:
-    name: luna-provider-payment
+    name: luna-provider-payment-sentinel
   cloud:
     nacos:
       discovery:
         server-addr: 192.168.1.100:8848
-
+    sentinel:
+      transport:
+        # 配置 Sentinel Dashboard 的地址
+        dashboard: 192.168.1.100:8080
+        # 默认8719 ，如果端口被占用，端口号会自动 +1，提供给 sentinel 的监控端口
+        port: 8719
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver              # mysql驱动包

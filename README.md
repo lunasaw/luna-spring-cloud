@@ -15,6 +15,9 @@ isczy.tk luna-spring-cloud
 - luna-provider-eureka-hystrix-node:8005 eureka client hystrix
 - luna-provider-eureka-stream-node:8025 eureka client stream rabbitmq
 - luna-provider-nacos-node-I:9001 nacos client 
+- luna-provider-nacos-node-II:9002 nacos client 
+- luna-provider-nacos-sentinel-node:9003 nacos client sentinel
+
 ### consumer
 - luna-consumer-eureka-node-I:8006 eureka client restTemplate
 - luna-consumer-eureka-node-II:8007 eureka client restTemplate
