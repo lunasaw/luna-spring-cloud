@@ -2,11 +2,12 @@ package com.luna.payment.controller;
 
 import javax.annotation.Resource;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.luna.commons.entities.CommonResult;
+import com.luna.payment.handler.SentinelHandler;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.luna.payment.service.PaymentSentinelService;
 
@@ -61,46 +62,61 @@ public class PaymentSentinelController {
     }
 
     /**
-     * 单方法降级
+     * 限流后 自定义全局异常降级处理
      * 
-     * @param time
-     * @param id
      * @return
      */
-    @GetMapping("/sentinel/timeout/single/fallback/{time}/{id}")
-    public String paymentInfoTimeoutSingleHandler(@PathVariable("time") Long time, @PathVariable("id") Integer id) {
-        return paymentSentinelService.paymentInfoTimeoutSingleHandler(time, id);
+    @GetMapping("/sentinel/customerHandler")
+    @SentinelResource(value = "sentinel/customerHandler", blockHandlerClass = SentinelHandler.class,
+        blockHandler = "handlerExceptionII")
+    public CommonResult<String> customerBlockHandler() {
+        return new CommonResult(200, "限流后 客户自定义异常处理", "customerBlockHandler----🉑️");
     }
 
     /**
-     * 全局降级
-     * 
+     * rateLimit URL 限流
+     *
      * @return
      */
-    @GetMapping("/sentinel/timeout/global/fallback")
-    public String paymentInfoTimeoutGlobalHandler() {
-        return paymentSentinelService.paymentInfoTimeoutGlobalHandler();
+    @GetMapping("/sentinel/rateLimit/get")
+    @SentinelResource(value = "sentinel/rateLimit/get")
+    public CommonResult<String> rateLimit() {
+        return new CommonResult(200, "rateLimit 按url限流", "rateLimit----🉑️");
     }
 
     /**
-     * 服务熔断
-     * 
-     * @param id
+     * byResource 资源名称限流
+     *
+     * @param p1
+     * @param p2
      * @return
      */
-    @GetMapping("/sentinel/circuit/{id}")
-    public String paymentCircuitBreaker(@PathVariable("id") Integer id) {
-        return paymentSentinelService.paymentCircuitBreaker(id);
+    @GetMapping("/sentinel/byResource/get")
+    @SentinelResource(value = "sentinel/byResource/get", blockHandler = "byResourceRollback")
+    public CommonResult<String> byResource(@RequestParam(value = "p1", required = false) String p1,
+        @RequestParam(value = "p2", required = false) String p2) {
+        return new CommonResult(200, "resource 限流 参数：" + p1 + "===" + p2, " byResource----🉑️");
+    }
+
+    public CommonResult<String> byResourceRollback(String p1, String p2, BlockException blockException) {
+        return new CommonResult(444, blockException.getClass().getName(), "byResourceRollback----不🉑️");
     }
 
     /**
-     * 服务熔断调用
+     * hostKey 资源名称限流
      * 
-     * @param id
+     * @param p1
+     * @param p2
      * @return
      */
-    @GetMapping("/sentinel/circuit/fallback/{id}")
-    public String paymentCircuitBreakerFallback(@PathVariable("id") Integer id) {
-        return paymentSentinelService.paymentCircuitBreakerFallback(id);
+    @GetMapping("/sentinel/hostkey/get")
+    @SentinelResource(value = "sentinel/hostKey/get", blockHandler = "getHostKeyRollback")
+    public CommonResult<String> getHostKey(@RequestParam(value = "p1", required = false) String p1,
+        @RequestParam(value = "p2", required = false) String p2) {
+        return new CommonResult(200, p1 + p2, "getHostKeyRollback----不🉑️");
+    }
+
+    public CommonResult<String> getHostKeyRollback(String p1, String p2, BlockException exception) {
+        return new CommonResult(444, exception.getMessage(), "getHostKeyRollback----不🉑️");
     }
 }
