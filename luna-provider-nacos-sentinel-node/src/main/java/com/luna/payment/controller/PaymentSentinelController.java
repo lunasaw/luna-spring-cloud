@@ -16,6 +16,9 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * @author luna_mac
  * @date 2020-02-18 10:43
+ * fallback 异常熔断处理
+ * blockHandler 控制台配置限流处理
+ * 同时配置 异常报错并且控制台限制 则控制台大于异常处理 fallback < blockHandler
  */
 
 @Slf4j
@@ -62,6 +65,21 @@ public class PaymentSentinelController {
     }
 
     /**
+     * 异常熔断后 客户自定义异常处理
+     * 
+     * @return
+     */
+    @GetMapping("/sentinel/customerFallback")
+    @SentinelResource(value = "sentinel/customerHandler", fallback = "customerFallbackHandler")
+    public CommonResult<String> customerFallback() {
+        throw new RuntimeException("异常熔断后 客户自定义异常处理 customerFallback----不🉑️");
+    }
+
+    public CommonResult<String> customerFallbackHandler() {
+        return new CommonResult(200, "异常熔断后 客户自定义异常处理", "customerFallbackHandler----🉑️");
+    }
+
+    /**
      * 限流后 自定义全局异常降级处理
      * 
      * @return
@@ -70,7 +88,7 @@ public class PaymentSentinelController {
     @SentinelResource(value = "sentinel/customerHandler", blockHandlerClass = SentinelHandler.class,
         blockHandler = "handlerExceptionII")
     public CommonResult<String> customerBlockHandler() {
-        return new CommonResult(200, "限流后 客户自定义异常处理", "customerBlockHandler----🉑️");
+        return new CommonResult(200, "限流后 客户自定义方法降级", "customerBlockHandler----🉑️");
     }
 
     /**
