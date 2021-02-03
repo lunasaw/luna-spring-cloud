@@ -10,7 +10,21 @@ spring:
     nacos:
       discovery:
         server-addr: f.xicc.cc:23403
+    sentinel:
+      transport:
+        # 配置 Sentinel Dashboard 的地址
+        dashboard: 192.168.1.100:8080
+        # 默认8719 ，如果端口被占用，端口号会自动 +1，提供给 sentinel 的监控端口
+        port: 8719
 
+      datasource:
+        ds1:
+          nacos:
+            server-addr: f.xicc.cc:23403
+            dataId: ${spring.application.name}
+            group: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
 
 feign:
   sentinel:
