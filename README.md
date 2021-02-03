@@ -41,7 +41,6 @@ isczy.tk luna-spring-cloud
 - luna-cloud-config-server:7011 eureka client 
 - luna-cloud-config-client-node-I:7012 eureka client 
 - luna-cloud-config-client-node-II:7013 eureka client 
-
 - luna-cloud-config-bus-server:7021  eureka client rabbitmq
 - luna-cloud-config-bus-client-node-I:7022 eureka client rabbitmq
 - luna-cloud-config-bus-client-node-II:7023 eureka client rabbitmq
