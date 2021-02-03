@@ -28,6 +28,10 @@ isczy.tk luna-spring-cloud
 - luna-consumer-consul-node:8010 consul client restTemplate
 - luna-consumer-eureka-stream-node-I:8013 eureka client stream rabbitmq
 - luna-consumer-eureka-stream-node-II:8014 eureka client stream rabbitmq
+- luna-consumer-nacos-node-I:9006 nacos client 
+- luna-consumer-nacos-node-II:9007 nacos client 
+- luna-consumer-nacos-openfeign-sentinel-node:9008 nacos client openfeign sentinel
+
 
 ### discovery client
 - luna-eureka-server-node-I:7001 
@@ -49,6 +53,9 @@ isczy.tk luna-spring-cloud
 127.0.0.1 eurekanodeI.com
 127.0.0.1 eurekanodeII.com
 
+# 服务监控
+sentinel /sentinel 8080
+zipkin /zipkin-server 9411
 # 代码规范
 - 后端使用同一份代码格式化膜模板ali-code-style.xml，ecplise直接导入使用，idea使用Eclipse Code Formatter插件配置xml后使用。
 - 前端代码使用vs插件的Beautify格式化，缩进使用TAB

@@ -21,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/luna-consumer-eureka-stream-node-II/luna-consumer-eureka-stream-node-II.iml" filepath="$PROJECT_DIR$/luna-consumer-eureka-stream-node-II/luna-consumer-eureka-stream-node-II.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-consumer-nacos-node-I/luna-consumer-nacos-node-I.iml" filepath="$PROJECT_DIR$/luna-consumer-nacos-node-I/luna-consumer-nacos-node-I.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-consumer-nacos-node-II/luna-consumer-nacos-node-II.iml" filepath="$PROJECT_DIR$/luna-consumer-nacos-node-II/luna-consumer-nacos-node-II.iml" />
+      <module fileurl="file://$PROJECT_DIR$/luna-consumer-nacos-openfeign-sentinel-node/luna-consumer-nacos-openfeign-sentinel-node.iml" filepath="$PROJECT_DIR$/luna-consumer-nacos-openfeign-sentinel-node/luna-consumer-nacos-openfeign-sentinel-node.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-consumer-zookeeper-node/luna-consumer-zookeeper-node.iml" filepath="$PROJECT_DIR$/luna-consumer-zookeeper-node/luna-consumer-zookeeper-node.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-eureka-server-node-I/luna-eureka-server-node-I.iml" filepath="$PROJECT_DIR$/luna-eureka-server-node-I/luna-eureka-server-node-I.iml" />
       <module fileurl="file://$PROJECT_DIR$/luna-eureka-server-node-II/luna-eureka-server-node-II.iml" filepath="$PROJECT_DIR$/luna-eureka-server-node-II/luna-eureka-server-node-II.iml" />

@@ -25,6 +25,7 @@
         <module name="luna-provider-nacos-node-II" />
         <module name="luna-consumer-eureka-node-I" />
         <module name="luna-provider-consul-node" />
+        <module name="luna-consumer-nacos-openfeign-sentinel-node" />
         <module name="luna-provider-eureka-hystrix-node" />
         <module name="luna-eureka-server-node-II" />
         <module name="luna-provider-eureka-stream-node" />
@@ -61,6 +62,7 @@
       <module name="luna-consumer-eureka-stream-node-II" target="1.8" />
       <module name="luna-consumer-nacos-node-I" target="1.8" />
       <module name="luna-consumer-nacos-node-II" target="1.8" />
+      <module name="luna-consumer-nacos-openfeign-sentinel-node" target="1.8" />
       <module name="luna-consumer-zookeeper-node" target="1.8" />
       <module name="luna-eureka-server-node-I" target="1.8" />
       <module name="luna-eureka-server-node-II" target="1.8" />

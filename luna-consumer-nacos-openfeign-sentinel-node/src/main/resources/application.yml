@@ -1,0 +1,17 @@
+server:
+  port: 9008
+  servlet:
+    context-path: /consumer-payment
+
+spring:
+  application:
+    name: luna-consumer-payment-sentinel
+  cloud:
+    nacos:
+      discovery:
+        server-addr: f.xicc.cc:23403
+
+
+feign:
+  sentinel:
+    enabled: true

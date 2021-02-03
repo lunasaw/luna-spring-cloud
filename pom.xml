@@ -29,6 +29,7 @@
         <module>luna-consumer-eureka-stream-node-II</module>
         <module>luna-consumer-nacos-node-I</module>
         <module>luna-consumer-nacos-node-II</module>
+        <module>luna-consumer-nacos-openfeign-sentinel-node</module>
         <module>luna-eureka-server-node-I</module>
         <module>luna-eureka-server-node-II</module>
         <module>luna-gateway-eureka-node</module>
