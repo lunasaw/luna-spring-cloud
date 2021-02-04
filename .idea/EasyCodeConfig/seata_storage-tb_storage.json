@@ -41,7 +41,7 @@
   } ],
   "pkColumn" : null,
   "otherColumn" : null,
-  "savePackageName" : "con.luna.storage",
-  "savePath" : "./luna-provider-storage-nacos-seate-node/src/main/java/con/luna/storage",
-  "saveModelName" : "luna-provider-storage-nacos-seate-node"
+  "savePackageName" : "com.luna.storage",
+  "savePath" : "./luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage",
+  "saveModelName" : "luna-provider-storage-nacos-seata-node"
 }

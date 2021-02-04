@@ -1,12 +1,12 @@
 server:
   port: 9101
   servlet:
-    context-path: /provider-payment
+    context-path: /provider-order
 spring:
   profiles:
     active: dev
   application:
-    name: luna-provider-payment
+    name: luna-provider-order
   cloud:
     alibaba:
       seata:

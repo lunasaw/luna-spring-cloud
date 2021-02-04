@@ -36,7 +36,7 @@ public class SwaggerConfig {
             // 用于生成API信息
             .select()
             // select()函数返回一个ApiSelectorBuilder实例,用来控制接口被swagger做成文档
-            .apis(RequestHandlerSelectors.basePackage("com.luna.storage"))
+            .apis(RequestHandlerSelectors.basePackage("com.luna"))
             // 用于指定扫描哪个包下的接口
             .paths(PathSelectors.any())
             // 选择所有的API,如果你想只为部分API生成文档，可以配置这里

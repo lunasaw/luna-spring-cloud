@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @Author: luna
- * @CreateTime: 2021-02-04 22:24:23
+ * @CreateTime: 2021-02-05 01:40:07
  */
 @Mapper
 public interface StorageMapper {
