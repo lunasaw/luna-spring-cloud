@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.luna.storage.mapper.StorageMapper">
+
+    <resultMap type="com.luna.storage.entity.Storage" id="StorageResultMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="total" column="total" jdbcType="INTEGER"/>
+        <result property="productId" column="product_id" jdbcType="INTEGER"/>
+        <result property="used" column="used" jdbcType="INTEGER"/>
+        <result property="residue" column="residue" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="table_field">
+      id, total, product_id, used, residue      
+    </sql>
+
+    <!--通过Id查询单个-->
+    <select id="getById" resultMap="StorageResultMap" parameterType="java.lang.Long">
+        select
+        <include refid="table_field"/>
+        from tb_storage
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+
+    <!--通过实体不为空的属性作为筛选条件查询列表-->
+    <select id="listByEntity" resultMap="StorageResultMap" parameterType="com.luna.storage.entity.Storage">
+        select
+        <include refid="table_field"/>
+        from tb_storage
+        <where>
+            <if test="id != null">
+                and id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="total != null">
+                and total = #{total,jdbcType=INTEGER}
+            </if>
+            <if test="productId != null">
+                and product_id = #{productId,jdbcType=INTEGER}
+            </if>
+            <if test="used != null">
+                and used = #{used,jdbcType=INTEGER}
+            </if>
+            <if test="residue != null">
+                and residue = #{residue,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+
+    <!--通过实体不为空的属性作为筛选条件查询单个-->
+    <select id="getByEntity" resultMap="StorageResultMap" parameterType="com.luna.storage.entity.Storage">
+        select
+        <include refid="table_field"/>
+        from tb_storage
+        <where>
+            <if test="id != null">
+                and id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="total != null">
+                and total = #{total,jdbcType=INTEGER}
+            </if>
+            <if test="productId != null">
+                and product_id = #{productId,jdbcType=INTEGER}
+            </if>
+            <if test="used != null">
+                and used = #{used,jdbcType=INTEGER}
+            </if>
+            <if test="residue != null">
+                and residue = #{residue,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+
+    <!--通过Id列表作为筛选条件查询列表，列表长度不为0-->
+    <select id="listByIds" resultMap="StorageResultMap" parameterType="list">
+        select
+        <include refid="table_field"/>
+        from tb_storage
+        where id in
+        <foreach item="item" collection="list" separator="," open="(" close=")" index="index">
+            #{item}
+        </foreach>
+    </select>
+
+    <!--新增实体属性不为null的列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true" parameterType="com.luna.storage.entity.Storage">
+        insert into tb_storage
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="total != null">
+                total,
+            </if>
+            <if test="productId != null">
+                product_id,
+            </if>
+            <if test="used != null">
+                used,
+            </if>
+            <if test="residue != null">
+                residue,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="total != null">
+                #{total,jdbcType=INTEGER},
+            </if>
+            <if test="productId != null">
+                #{productId,jdbcType=INTEGER},
+            </if>
+            <if test="used != null">
+                #{used,jdbcType=INTEGER},
+            </if>
+            <if test="residue != null">
+                #{residue,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+    <!--批量新增所有列，列表长度不能为0，且列表id统一为null或者统一不为null-->
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true" parameterType="list">
+        insert into tb_storage
+        (id, total, product_id, used, residue)
+        values
+        <foreach item="item" collection="list" separator="," open="" close="" index="index">
+            (#{item.id,jdbcType=INTEGER}, #{item.total,jdbcType=INTEGER}, #{item.productId,jdbcType=INTEGER},
+            #{item.used,jdbcType=INTEGER}, #{item.residue,jdbcType=INTEGER})
+        </foreach>
+    </insert>
+
+    <!--通过主键修改实体属性不为null的列-->
+    <update id="update" parameterType="com.luna.storage.entity.Storage">
+        update tb_storage
+        <set>
+            <if test="total != null">
+                total = #{total,jdbcType=INTEGER},
+            </if>
+            <if test="productId != null">
+                product_id = #{productId,jdbcType=INTEGER},
+            </if>
+            <if test="used != null">
+                used = #{used,jdbcType=INTEGER},
+            </if>
+            <if test="residue != null">
+                residue = #{residue,jdbcType=INTEGER},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <!--通过表字段修改实体属性不为null的列-->
+    <update id="updateByField">
+        update tb_storage
+        <set>
+            <if test="where.total == null and set.total != null">
+                total = #{set.total,jdbcType=INTEGER},
+            </if>
+            <if test="where.productId == null and set.productId != null">
+                product_id = #{set.productId,jdbcType=INTEGER},
+            </if>
+            <if test="where.used == null and set.used != null">
+                used = #{set.used,jdbcType=INTEGER},
+            </if>
+            <if test="where.residue == null and set.residue != null">
+                residue = #{set.residue,jdbcType=INTEGER},
+            </if>
+        </set>
+        <where>
+            <if test="where.id != null">
+                and id = #{where.id,jdbcType=INTEGER}
+            </if>
+            <if test="where.total != null">
+                and total = #{where.total,jdbcType=INTEGER}
+            </if>
+            <if test="where.productId != null">
+                and product_id = #{where.productId,jdbcType=INTEGER}
+            </if>
+            <if test="where.used != null">
+                and used = #{where.used,jdbcType=INTEGER}
+            </if>
+            <if test="where.residue != null">
+                and residue = #{where.residue,jdbcType=INTEGER}
+            </if>
+        </where>
+    </update>
+
+    <!--通过主键修改实体列表，列表长度不能为0，注意：当实体属性为null时，对应的列也会别更新为null-->
+    <update id="updateBatch" parameterType="list">
+        update tb_storage
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="total = case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.total}
+                </foreach>
+            </trim>
+            <trim prefix="product_id = case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.productId}
+                </foreach>
+            </trim>
+            <trim prefix="used = case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.used}
+                </foreach>
+            </trim>
+            <trim prefix="residue = case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.residue}
+                </foreach>
+            </trim>
+        </trim>
+        where id in
+        <foreach collection="list" index="index" item="item" separator="," open="(" close=")">
+            #{item.id,jdbcType=INTEGER}
+        </foreach>
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById" parameterType="java.lang.Long">
+        delete from tb_storage where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <!--通过实体非空属性删除-->
+    <delete id="deleteByEntity" parameterType="com.luna.storage.entity.Storage">
+        delete from tb_storage
+        <where>
+            <if test="total != null">
+                and total = #{total,jdbcType=INTEGER}
+            </if>
+            <if test="productId != null">
+                and product_id = #{productId,jdbcType=INTEGER}
+            </if>
+            <if test="used != null">
+                and used = #{used,jdbcType=INTEGER}
+            </if>
+            <if test="residue != null">
+                and residue = #{residue,jdbcType=INTEGER}
+            </if>
+        </where>
+    </delete>
+
+    <!--通过主键列表删除，列表长度不能为0-->
+    <delete id="deleteByIds" parameterType="list">
+        delete from tb_storage where id in
+        <foreach item="item" collection="list" separator="," open="(" close=")" index="index">
+            #{item}
+        </foreach>
+    </delete>
+
+    <select id="countAll" resultType="int">
+        select count(id) from tb_storage
+    </select>
+
+    <select id="countByEntity" parameterType="com.luna.storage.entity.Storage" resultType="int">
+        select count(id) from tb_storage
+        <where>
+            <if test="id != null">
+                and id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="total != null">
+                and total = #{total,jdbcType=INTEGER}
+            </if>
+            <if test="productId != null">
+                and product_id = #{productId,jdbcType=INTEGER}
+            </if>
+            <if test="used != null">
+                and used = #{used,jdbcType=INTEGER}
+            </if>
+            <if test="residue != null">
+                and residue = #{residue,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+</mapper>

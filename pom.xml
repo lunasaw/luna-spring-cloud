@@ -18,6 +18,9 @@
         <module>luna-provider-nacos-node-I</module>
         <module>luna-provider-nacos-node-II</module>
         <module>luna-provider-nacos-sentinel-node</module>
+        <module>luna-provider-order-nacos-seata-node</module>
+        <module>luna-provider-account-nacos-seata-node</module>
+        <module>luna-provider-storage-nacos-seata-node</module>
         <module>luna-consumer-eureka-node-I</module>
         <module>luna-consumer-eureka-node-II</module>
         <module>luna-consumer-eureka-openfeign-node</module>
@@ -40,6 +43,8 @@
         <module>luna-cloud-config-nacos-client</module>
         <module>luna-cloud-config-bus-client-node-I</module>
         <module>luna-cloud-config-bus-client-node-II</module>
+
+
     </modules>
     <packaging>pom</packaging>
 
