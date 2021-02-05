@@ -1,20 +1,18 @@
-package com.luna.order.feign;
-
-import java.util.List;
+package com.luna.account.feign;
 
 import com.github.pagehelper.PageInfo;
+import com.luna.account.entity.Account;
 import com.luna.commons.dto.ResultDTO;
-import com.luna.commons.entities.Account;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
-
+import java.util.List;
 
 /**
  * @Author: luna
  * @CreateTime: 2021-02-05 13:53:04
  */
-@FeignClient("luna-provider-account")
+@FeignClient("provider-xxxxx-account")
 @Component
 public interface AccountService {
     String PROVIDER_URL = "/provider-account/account/api";

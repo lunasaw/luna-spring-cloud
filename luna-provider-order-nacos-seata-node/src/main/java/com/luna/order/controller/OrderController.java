@@ -1,5 +1,7 @@
 package com.luna.order.controller;
 
+import cn.hutool.json.JSON;
+import cn.hutool.json.JSONUtil;
 import com.github.pagehelper.PageInfo;
 import com.luna.commons.dto.ResultDTO;
 import com.luna.commons.dto.constant.ResultCode;
@@ -39,7 +41,7 @@ public class OrderController {
 
     @ApiOperation(value = "根据id查询订单")
     @GetMapping("/get/{id}")
-    public ResultDTO<Order> getById(@PathVariable Long id) {
+    public ResultDTO<Order> getById(@PathVariable(value = "id") Long id) {
         Order order = orderService.getById(id);
         return new ResultDTO<>(true, ResultCode.SUCCESS, ResultCode.MSG_SUCCESS, order);
     }
@@ -82,18 +84,17 @@ public class OrderController {
         Storage storage = new Storage();
         storage.setProductId(order.getProductId());
         Storage data = storageService.getByEntity(storage).getData();
-        data.setTotal(data.getTotal() - 1);
-        log.info("----------订单微服务开始调用库存，使用量做增加------------------");
-        data.setUsed(data.getUsed() + 1);
+        data.setTotal(data.getTotal() - order.getCount());
+        log.info("----------订单微服务开始调用库存，使用量做增加 data={}", JSONUtil.toJsonStr(data));
+        data.setUsed(data.getUsed() + order.getCount());
         ResultDTO<Boolean> update = storageService.update(data);
         log.info("----------根据状态更新金额 状态={}", update.getData());
         Account account = new Account();
-        // 这里用户和产品价格都是魔法值 1 和 50
         account.setUserId(order.getUserId());
         Account userAccount = accountService.getByEntity(account).getData();
-        userAccount.setTotal(userAccount.getTotal() - 50);
-        userAccount.setUse(userAccount.getUse() + 50);
-        userAccount.setResidue(userAccount.getTotal() - userAccount.getUse());
+        userAccount.setTotal(userAccount.getTotal() - order.getMoney());
+        userAccount.setUsed(userAccount.getUsed() + order.getMoney());
+        userAccount.setResidue(userAccount.getTotal() - userAccount.getUsed());
         ResultDTO<Boolean> updateuUserAccount = accountService.update(userAccount);
         log.info("-----------更新金额后，修改订单状态-状态={}", updateuUserAccount.getData());
         order.setStatus(1);
@@ -123,7 +124,7 @@ public class OrderController {
 
     @ApiOperation(value = "主键删除订单")
     @DeleteMapping("/delete/{id}")
-    public ResultDTO<Boolean> deleteOne(@PathVariable Long id) {
+    public ResultDTO<Boolean> deleteOne(@PathVariable(value = "id") Long id) {
         return new ResultDTO<>(true, ResultCode.SUCCESS, ResultCode.MSG_SUCCESS, orderService.deleteById(id) == 1);
     }
 

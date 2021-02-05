@@ -25,7 +25,7 @@ public class StorageController {
 
     @ApiOperation(value = "根据id查询库存")
     @GetMapping("/get/{id}")
-    public ResultDTO<Storage> getById(@PathVariable Long id) {
+    public ResultDTO<Storage> getById(@PathVariable(value = "id") Long id) {
         Storage storage = storageService.getById(id);
         return new ResultDTO<>(true, ResultCode.SUCCESS, ResultCode.MSG_SUCCESS, storage);
     }
@@ -88,7 +88,7 @@ public class StorageController {
 
     @ApiOperation(value = "主键删除库存")
     @DeleteMapping("/delete/{id}")
-    public ResultDTO<Boolean> deleteOne(@PathVariable Long id) {
+    public ResultDTO<Boolean> deleteOne(@PathVariable(value = "id") Long id) {
         return new ResultDTO<>(true, ResultCode.SUCCESS, ResultCode.MSG_SUCCESS, storageService.deleteById(id) == 1);
     }
 

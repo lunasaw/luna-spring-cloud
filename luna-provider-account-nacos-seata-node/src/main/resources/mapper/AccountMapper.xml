@@ -6,12 +6,12 @@
         <result property="id" column="id" jdbcType="INTEGER"/>
         <result property="userId" column="user_id" jdbcType="INTEGER"/>
         <result property="total" column="total" jdbcType="NUMERIC"/>
-        <result property="use" column="use" jdbcType="NUMERIC"/>
+        <result property="used" column="used" jdbcType="NUMERIC"/>
         <result property="residue" column="residue" jdbcType="NUMERIC"/>
     </resultMap>
 
     <sql id="table_field">
-      id, user_id, total, use, residue      
+      id, user_id, total, used, residue      
     </sql>
 
     <!--通过Id查询单个-->
@@ -38,8 +38,8 @@
             <if test="total != null">
                 and total = #{total,jdbcType=NUMERIC}
             </if>
-            <if test="use != null">
-                and use = #{use,jdbcType=NUMERIC}
+            <if test="used != null">
+                and used = #{used,jdbcType=NUMERIC}
             </if>
             <if test="residue != null">
                 and residue = #{residue,jdbcType=NUMERIC}
@@ -62,8 +62,8 @@
             <if test="total != null">
                 and total = #{total,jdbcType=NUMERIC}
             </if>
-            <if test="use != null">
-                and use = #{use,jdbcType=NUMERIC}
+            <if test="used != null">
+                and used = #{used,jdbcType=NUMERIC}
             </if>
             <if test="residue != null">
                 and residue = #{residue,jdbcType=NUMERIC}
@@ -95,8 +95,8 @@
             <if test="total != null">
                 total,
             </if>
-            <if test="use != null">
-                use,
+            <if test="used != null">
+                used,
             </if>
             <if test="residue != null">
                 residue,
@@ -112,8 +112,8 @@
             <if test="total != null">
                 #{total,jdbcType=NUMERIC},
             </if>
-            <if test="use != null">
-                #{use,jdbcType=NUMERIC},
+            <if test="used != null">
+                #{used,jdbcType=NUMERIC},
             </if>
             <if test="residue != null">
                 #{residue,jdbcType=NUMERIC},
@@ -124,11 +124,11 @@
     <!--批量新增所有列，列表长度不能为0，且列表id统一为null或者统一不为null-->
     <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true" parameterType="list">
         insert into tb_account
-        (id, user_id, total, use, residue)
+        (id, user_id, total, used, residue)
         values
         <foreach item="item" collection="list" separator="," open="" close="" index="index">
             (#{item.id,jdbcType=INTEGER}, #{item.userId,jdbcType=INTEGER}, #{item.total,jdbcType=NUMERIC},
-            #{item.use,jdbcType=NUMERIC}, #{item.residue,jdbcType=NUMERIC})
+            #{item.used,jdbcType=NUMERIC}, #{item.residue,jdbcType=NUMERIC})
         </foreach>
     </insert>
 
@@ -142,8 +142,8 @@
             <if test="total != null">
                 total = #{total,jdbcType=NUMERIC},
             </if>
-            <if test="use != null">
-                use = #{use,jdbcType=NUMERIC},
+            <if test="used != null">
+                used = #{used,jdbcType=NUMERIC},
             </if>
             <if test="residue != null">
                 residue = #{residue,jdbcType=NUMERIC},
@@ -162,8 +162,8 @@
             <if test="where.total == null and set.total != null">
                 total = #{set.total,jdbcType=NUMERIC},
             </if>
-            <if test="where.use == null and set.use != null">
-                use = #{set.use,jdbcType=NUMERIC},
+            <if test="where.used == null and set.used != null">
+                used = #{set.used,jdbcType=NUMERIC},
             </if>
             <if test="where.residue == null and set.residue != null">
                 residue = #{set.residue,jdbcType=NUMERIC},
@@ -179,8 +179,8 @@
             <if test="where.total != null">
                 and total = #{where.total,jdbcType=NUMERIC}
             </if>
-            <if test="where.use != null">
-                and use = #{where.use,jdbcType=NUMERIC}
+            <if test="where.used != null">
+                and used = #{where.used,jdbcType=NUMERIC}
             </if>
             <if test="where.residue != null">
                 and residue = #{where.residue,jdbcType=NUMERIC}
@@ -202,9 +202,9 @@
                     when id = #{item.id} then #{item.total}
                 </foreach>
             </trim>
-            <trim prefix="use = case" suffix="end,">
+            <trim prefix="used = case" suffix="end,">
                 <foreach collection="list" item="item" index="index">
-                    when id = #{item.id} then #{item.use}
+                    when id = #{item.id} then #{item.used}
                 </foreach>
             </trim>
             <trim prefix="residue = case" suffix="end,">
@@ -234,8 +234,8 @@
             <if test="total != null">
                 and total = #{total,jdbcType=NUMERIC}
             </if>
-            <if test="use != null">
-                and use = #{use,jdbcType=NUMERIC}
+            <if test="used != null">
+                and used = #{used,jdbcType=NUMERIC}
             </if>
             <if test="residue != null">
                 and residue = #{residue,jdbcType=NUMERIC}
@@ -267,8 +267,8 @@
             <if test="total != null">
                 and total = #{total,jdbcType=NUMERIC}
             </if>
-            <if test="use != null">
-                and use = #{use,jdbcType=NUMERIC}
+            <if test="used != null">
+                and used = #{used,jdbcType=NUMERIC}
             </if>
             <if test="residue != null">
                 and residue = #{residue,jdbcType=NUMERIC}

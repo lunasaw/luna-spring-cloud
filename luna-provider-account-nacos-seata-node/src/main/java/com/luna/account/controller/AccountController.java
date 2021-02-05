@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * @Author: luna
- * @CreateTime: 2021-02-05 12:13:26
+ * @CreateTime: 2021-02-05 13:53:04
  */
 @Api(tags = "(Account)")
 @RestController
@@ -25,7 +25,7 @@ public class AccountController {
 
     @ApiOperation(value = "根据id查询")
     @GetMapping("/get/{id}")
-    public ResultDTO<Account> getById(@PathVariable Long id) {
+    public ResultDTO<Account> getById(@PathVariable(value = "Long id") Long id) {
         Account account = accountService.getById(id);
         return new ResultDTO<>(true, ResultCode.SUCCESS, ResultCode.MSG_SUCCESS, account);
     }
@@ -59,14 +59,14 @@ public class AccountController {
         return new ResultDTO<>(true, ResultCode.SUCCESS, ResultCode.MSG_SUCCESS, pageInfo);
     }
 
-    @ApiOperation(value = "插入")
+    @ApiOperation(value = "新增")
     @PostMapping("/insert")
     public ResultDTO<Account> insert(@RequestBody Account account) {
         accountService.insert(account);
         return new ResultDTO<>(true, ResultCode.SUCCESS, ResultCode.MSG_SUCCESS, account);
     }
 
-    @ApiOperation(value = "批量插入")
+    @ApiOperation(value = "批量新增")
     @PostMapping("/insertBatch")
     public ResultDTO<List<Account>> insert(@RequestBody List<Account> list) {
         accountService.insertBatch(list);
@@ -88,7 +88,7 @@ public class AccountController {
 
     @ApiOperation(value = "主键删除")
     @DeleteMapping("/delete/{id}")
-    public ResultDTO<Boolean> deleteOne(@PathVariable Long id) {
+    public ResultDTO<Boolean> deleteOne(@PathVariable(value = "Long id") Long id) {
         return new ResultDTO<>(true, ResultCode.SUCCESS, ResultCode.MSG_SUCCESS, accountService.deleteById(id) == 1);
     }
 

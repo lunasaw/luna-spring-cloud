@@ -9,11 +9,11 @@ import java.io.Serializable;
  * (Account)实体类
  *
  * @author luna
- * @since 2021-02-05 12:13:25
+ * @since 2021-02-05 13:53:04
  */
 @ApiModel("实体类")
 public class Account implements Serializable {
-    private static final long serialVersionUID = 878611421505323321L;
+    private static final long serialVersionUID = 164140558893644657L;
     @ApiModelProperty("id")
     private Long              id;
     @ApiModelProperty("userId")
@@ -27,7 +27,7 @@ public class Account implements Serializable {
      * 已用额度
      */
     @ApiModelProperty("已用额度")
-    private Double            use;
+    private Double            used;
     /**
      * 剩余额度
      */
@@ -58,12 +58,12 @@ public class Account implements Serializable {
         this.total = total;
     }
 
-    public Double getUse() {
-        return use;
+    public Double getUsed() {
+        return used;
     }
 
-    public void setUse(Double use) {
-        this.use = use;
+    public void setUsed(Double used) {
+        this.used = used;
     }
 
     public Double getResidue() {

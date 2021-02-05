@@ -23,47 +23,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da586f1d-e31d-450a-81a7-98199c813e96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/seata_account-tb_account.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-api-commons/src/main/java/com/luna/commons/entities/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-api-commons/src/main/java/com/luna/commons/entities/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-api-commons/src/main/java/com/luna/commons/entities/Storage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/mapper/AccountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources/file.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources/mapper/AccountMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources/registry.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/feign/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/feign/StorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/feign/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EasyCodeConfig/seata_order-tb_order.json" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/seata_order-tb_order.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EasyCodeConfig/seata_storage-tb_storage.json" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/seata_storage-tb_storage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_httpclient_10_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/feign/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/config/DataSourceProxyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/config/MyBatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EasyCodeConfig/seata_account-tb_account.json" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/seata_account-tb_account.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/payment/ProviderNacosApplicationNodeOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/ProviderAccountSeataApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/payment/controller/PaymentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/payment/dao/PaymentDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/payment/service/PaymentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/payment/service/impl/PaymentServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources/mapper/PaymentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-api-commons/src/main/java/com/luna/commons/entities/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-api-commons/src/main/java/com/luna/commons/entities/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/entity/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/mapper/AccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/mapper/AccountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/java/com/luna/account/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources/mapper/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources/mapper/AccountMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-nacos-sentinel-node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-nacos-sentinel-node/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/ProviderOrderSeataApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/ProviderOrderSeataApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/ProviderStorageNacosSeataApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/ProviderStorageSeataApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/feign/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/feign/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/feign/StorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/feign/StorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/controller/StorageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/controller/StorageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/entity/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/entity/Storage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/mapper/StorageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/mapper/StorageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/service/StorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/service/StorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/service/impl/StorageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage/service/impl/StorageServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,13 +106,13 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/config" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32839316" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="com.sjhy.plugin.ui.TemplateSettingPanel" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -141,18 +122,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.luna.account.config" />
-      <recent name="com.luna.commons.entities" />
       <recent name="com.luna.order.feign" />
+      <recent name="com.luna.commons.entities" />
+      <recent name="com.luna.account.config" />
       <recent name="com.luna.order.config" />
       <recent name="com.luna.commons.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order/config" />
+      <recent name="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/java/com/luna/order" />
       <recent name="$PROJECT_DIR$/luna-provider-account-nacos-seata-node/src/main/resources" />
       <recent name="$PROJECT_DIR$/luna-provider-storage-nacos-seata-node/src/main/resources" />
       <recent name="$PROJECT_DIR$/luna-provider-order-nacos-seata-node/src/main/resources" />
-      <recent name="$PROJECT_DIR$/luna-api-commons/src/main/java/com/luna/commons" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -163,14 +144,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProviderOrderSeataApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ProviderStorageSeataApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -637,7 +620,8 @@
       <workItem from="1612444256309" duration="202000" />
       <workItem from="1612444635541" duration="4047000" />
       <workItem from="1612452863849" duration="7919000" />
-      <workItem from="1612496189927" duration="3966000" />
+      <workItem from="1612496189927" duration="4629000" />
+      <workItem from="1612500830283" duration="4245000" />
     </task>
     <task id="LOCAL-00001" summary=":memo: :tada: openFeign timeout control">
       <created>1611508311388</created>
@@ -877,7 +861,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612460687433</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary=":memo: :tada:   seata order storage and account">
+      <created>1612500353762</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1612500353762</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -920,7 +911,8 @@
     <MESSAGE value=":memo: :tada:   sentinel openfeign" />
     <MESSAGE value=":memo: :tada:   sentinel rule-&gt;nacos" />
     <MESSAGE value=":memo: :tada:   seata connection" />
-    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada:   seata connection" />
+    <MESSAGE value=":memo: :tada:   seata order storage and account" />
+    <option name="LAST_COMMIT_MESSAGE" value=":memo: :tada:   seata order storage and account" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -944,10 +936,10 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="589" y="189" key="#Inspections/0.25.1920.992@0.25.1920.992" timestamp="1611910529129" />
-    <state x="320" y="25" key="#Project_Structure" timestamp="1612498422141">
+    <state x="320" y="25" key="#Project_Structure" timestamp="1612501866070">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="320" y="25" key="#Project_Structure/0.25.1920.992@0.25.1920.992" timestamp="1612498422141" />
+    <state x="320" y="25" key="#Project_Structure/0.25.1920.992@0.25.1920.992" timestamp="1612501866070" />
     <state x="439" y="86" key="#SSH_Configurations" timestamp="1612083359488">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -985,64 +977,64 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="406" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1920.992@0.25.1920.992" timestamp="1612168443123" />
-    <state x="210" y="25" width="1500" height="958" key="CommitChangelistDialog2" timestamp="1612460687040">
+    <state x="210" y="25" width="1500" height="958" key="CommitChangelistDialog2" timestamp="1612500352952">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="210" y="0" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1611991994838" />
     <state x="207" y="65" width="1500" height="958" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649901083" />
-    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1612460687040" />
+    <state x="210" y="25" width="1500" height="992" key="CommitChangelistDialog2/0.25.1920.992@0.25.1920.992" timestamp="1612500352952" />
     <state x="192" y="111" width="1536" height="794" key="DiffContextDialog" timestamp="1612447729541">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="192" y="111" width="1536" height="794" key="DiffContextDialog/0.25.1920.992@0.25.1920.992" timestamp="1612447729541" />
-    <state width="1406" height="356" key="GridCell.Tab.0.bottom" timestamp="1612500151282">
+    <state width="1309" height="291" key="GridCell.Tab.0.bottom" timestamp="1612505086063">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1030" height="453" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1611991976831" />
     <state width="1285" height="263" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1406" height="356" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1612500151282" />
-    <state width="1406" height="356" key="GridCell.Tab.0.center" timestamp="1612500151281">
+    <state width="1309" height="291" key="GridCell.Tab.0.bottom/0.25.1920.992@0.25.1920.992" timestamp="1612505086063" />
+    <state width="1309" height="291" key="GridCell.Tab.0.center" timestamp="1612505086062">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1030" height="453" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1611991976831" />
     <state width="1285" height="263" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1406" height="356" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1612500151281" />
-    <state width="1406" height="356" key="GridCell.Tab.0.left" timestamp="1612500151279">
+    <state width="1309" height="291" key="GridCell.Tab.0.center/0.25.1920.992@0.25.1920.992" timestamp="1612505086062" />
+    <state width="1309" height="291" key="GridCell.Tab.0.left" timestamp="1612505086061">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1030" height="453" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1611991976830" />
     <state width="1285" height="263" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1406" height="356" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1612500151279" />
-    <state width="1406" height="356" key="GridCell.Tab.0.right" timestamp="1612500151281">
+    <state width="1309" height="291" key="GridCell.Tab.0.left/0.25.1920.992@0.25.1920.992" timestamp="1612505086061" />
+    <state width="1309" height="291" key="GridCell.Tab.0.right" timestamp="1612505086062">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1030" height="453" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1611991976831" />
     <state width="1285" height="263" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1406" height="356" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1612500151281" />
-    <state width="1406" height="356" key="GridCell.Tab.1.bottom" timestamp="1612500151284">
+    <state width="1309" height="291" key="GridCell.Tab.0.right/0.25.1920.992@0.25.1920.992" timestamp="1612505086062" />
+    <state width="1309" height="291" key="GridCell.Tab.1.bottom" timestamp="1612505086064">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1030" height="453" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1611991976833" />
     <state width="1285" height="263" key="GridCell.Tab.1.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1406" height="356" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1612500151284" />
-    <state width="1406" height="356" key="GridCell.Tab.1.center" timestamp="1612500151283">
+    <state width="1309" height="291" key="GridCell.Tab.1.bottom/0.25.1920.992@0.25.1920.992" timestamp="1612505086064" />
+    <state width="1309" height="291" key="GridCell.Tab.1.center" timestamp="1612505086063">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1030" height="453" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1611991976832" />
     <state width="1285" height="263" key="GridCell.Tab.1.center/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1406" height="356" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1612500151283" />
-    <state width="1406" height="356" key="GridCell.Tab.1.left" timestamp="1612500151282">
+    <state width="1309" height="291" key="GridCell.Tab.1.center/0.25.1920.992@0.25.1920.992" timestamp="1612505086063" />
+    <state width="1309" height="291" key="GridCell.Tab.1.left" timestamp="1612505086063">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1030" height="453" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1611991976832" />
     <state width="1285" height="263" key="GridCell.Tab.1.left/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517111" />
-    <state width="1406" height="356" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1612500151282" />
-    <state width="1406" height="356" key="GridCell.Tab.1.right" timestamp="1612500151283">
+    <state width="1309" height="291" key="GridCell.Tab.1.left/0.25.1920.992@0.25.1920.992" timestamp="1612505086063" />
+    <state width="1309" height="291" key="GridCell.Tab.1.right" timestamp="1612505086063">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state width="1030" height="453" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1611991976833" />
     <state width="1285" height="263" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1611651517112" />
-    <state width="1406" height="356" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1612500151283" />
+    <state width="1309" height="291" key="GridCell.Tab.1.right/0.25.1920.992@0.25.1920.992" timestamp="1612505086063" />
     <state width="1224" height="295" key="GridCell.Tab.2.bottom" timestamp="1611916441930">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -1067,20 +1059,24 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="398" y="300" width="1123" height="617" key="Registry/0.25.1920.992@0.25.1920.992" timestamp="1611507232485" />
-    <state x="0" y="70" width="1920" height="903" key="SettingsEditor" timestamp="1612498983260">
+    <state x="0" y="70" width="1920" height="903" key="SettingsEditor" timestamp="1612502207149">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
-    <state x="0" y="70" width="1920" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1612498983260" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1612460689236">
+    <state x="0" y="70" width="1920" height="903" key="SettingsEditor/0.25.1920.992@0.25.1920.992" timestamp="1612502207149" />
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2" timestamp="1612500355787">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="460" y="185" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1611991996719" />
     <state x="460" y="206" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1611649903052" />
-    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1612460689236" />
+    <state x="460" y="195" key="Vcs.Push.Dialog.v2/0.25.1920.992@0.25.1920.992" timestamp="1612500355787" />
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611505198412">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="100" y="125" width="1720" height="792" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.1920.992@0.25.1920.992" timestamp="1611505198412" />
+    <state x="707" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612500279020">
+      <screen x="0" y="25" width="1920" height="992" />
+    </state>
+    <state x="707" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.992@0.25.1920.992" timestamp="1612500279020" />
     <state x="586" y="175" width="988" height="768" key="find.popup" timestamp="1612165494777">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
@@ -1089,10 +1085,10 @@
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="0" y="81" key="new project wizard/0.25.1920.992@0.25.1920.992" timestamp="1611816911986" />
-    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup" timestamp="1611983288757">
+    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup" timestamp="1612504733848">
       <screen x="0" y="25" width="1920" height="992" />
     </state>
     <state x="541" y="25" width="838" height="1098" key="search.everywhere.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1611651300036" />
-    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1920.992@0.25.1920.992" timestamp="1611983288757" />
+    <state x="541" y="25" width="838" height="1032" key="search.everywhere.popup/0.25.1920.992@0.25.1920.992" timestamp="1612504733848" />
   </component>
 </project>

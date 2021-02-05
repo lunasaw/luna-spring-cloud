@@ -26,7 +26,7 @@ public interface StorageService {
      * @return 对象
      */
     @GetMapping(PROVIDER_URL + "/get/{id}")
-    ResultDTO<Storage> getById(@PathVariable Long id);
+    ResultDTO<Storage> getById(@PathVariable(value = "id") Long id);
 
     /**
      * 查询全部库存
@@ -111,7 +111,7 @@ public interface StorageService {
      * @return 对象
      */
     @DeleteMapping(PROVIDER_URL + "/delete/{id}")
-    ResultDTO<Boolean> deleteOne(@PathVariable Long id);
+    ResultDTO<Boolean> deleteOne(@PathVariable(value = "id") Long id);
 
     /**
      * 条件删除库存
