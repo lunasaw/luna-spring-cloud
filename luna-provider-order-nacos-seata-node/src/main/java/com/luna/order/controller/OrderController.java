@@ -78,27 +78,7 @@ public class OrderController {
     @ApiOperation(value = "新增订单")
     @PostMapping("/insert")
     public ResultDTO<Order> insert(@RequestBody Order order) {
-        log.info("-----------------------创建订单-----------------------");
         orderService.insert(order);
-        log.info("-----------订单微服务开始调用库存，总量做扣减------------------");
-        Storage storage = new Storage();
-        storage.setProductId(order.getProductId());
-        Storage data = storageService.getByEntity(storage).getData();
-        data.setTotal(data.getTotal() - order.getCount());
-        log.info("----------订单微服务开始调用库存，使用量做增加 data={}", JSONUtil.toJsonStr(data));
-        data.setUsed(data.getUsed() + order.getCount());
-        ResultDTO<Boolean> update = storageService.update(data);
-        log.info("----------根据状态更新金额 状态={}", update.getData());
-        Account account = new Account();
-        account.setUserId(order.getUserId());
-        Account userAccount = accountService.getByEntity(account).getData();
-        userAccount.setTotal(userAccount.getTotal() - order.getMoney());
-        userAccount.setUsed(userAccount.getUsed() + order.getMoney());
-        userAccount.setResidue(userAccount.getTotal() - userAccount.getUsed());
-        ResultDTO<Boolean> updateuUserAccount = accountService.update(userAccount);
-        log.info("-----------更新金额后，修改订单状态-状态={}", updateuUserAccount.getData());
-        order.setStatus(1);
-        orderService.update(order);
         return new ResultDTO<>(true, ResultCode.SUCCESS, ResultCode.MSG_SUCCESS, order);
     }
 
