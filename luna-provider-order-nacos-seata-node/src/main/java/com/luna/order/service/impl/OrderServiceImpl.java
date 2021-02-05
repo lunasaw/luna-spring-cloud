@@ -12,6 +12,7 @@ import com.luna.order.service.OrderService;
 import com.luna.order.entity.Order;
 import javax.annotation.Resource;
 
+import io.seata.spring.annotation.GlobalTransactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +32,7 @@ public class OrderServiceImpl implements OrderService {
     private static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
 
     @Resource(type = OrderMapper.class)
-    private OrderMapper orderMapper;
+    private OrderMapper         orderMapper;
 
     @Autowired
     private StorageService      storageService;
@@ -74,6 +75,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    @GlobalTransactional(name = "luna-provider-order", rollbackFor = Exception.class)
     public int insert(Order order) {
         log.info("-----------------------创建订单-----------------------");
         orderMapper.insert(order);
@@ -81,15 +83,14 @@ public class OrderServiceImpl implements OrderService {
         Storage storage = new Storage();
         storage.setProductId(order.getProductId());
         Storage data = storageService.getByEntity(storage).getData();
-        data.setTotal(data.getTotal() - order.getCount());
         log.info("----------订单微服务开始调用库存，使用量做增加 data={}", JSONUtil.toJsonStr(data));
         data.setUsed(data.getUsed() + order.getCount());
+        data.setResidue(data.getTotal() - data.getUsed());
         ResultDTO<Boolean> update = storageService.update(data);
         log.info("----------根据状态更新金额 状态={}", update.getData());
         Account account = new Account();
         account.setUserId(order.getUserId());
         Account userAccount = accountService.getByEntity(account).getData();
-        userAccount.setTotal(userAccount.getTotal() - order.getMoney());
         userAccount.setUsed(userAccount.getUsed() + order.getMoney());
         userAccount.setResidue(userAccount.getTotal() - userAccount.getUsed());
         ResultDTO<Boolean> updateuUserAccount = accountService.update(userAccount);

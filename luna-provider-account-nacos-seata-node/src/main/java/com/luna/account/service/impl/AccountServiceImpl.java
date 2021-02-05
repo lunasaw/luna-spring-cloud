@@ -9,6 +9,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author: luna
@@ -66,6 +67,11 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public int update(Account account) {
+        // try {
+        // TimeUnit.SECONDS.sleep(20);
+        // } catch (InterruptedException e) {
+        // e.printStackTrace();
+        // }
         return accountMapper.update(account);
     }
 
