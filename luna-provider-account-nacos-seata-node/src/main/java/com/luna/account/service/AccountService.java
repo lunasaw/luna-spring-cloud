@@ -1,17 +1,15 @@
-package com.luna.order.service;
+package com.luna.account.service;
 
-import com.luna.order.mapper.OrderMapper;
-import com.luna.order.entity.Order;
-import com.github.pagehelper.PageHelper;
+import com.luna.account.entity.Account;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
 /**
  * @Author: luna
- * @CreateTime: 2021-02-05 12:11:51
+ * @CreateTime: 2021-02-05 12:13:25
  */
-public interface OrderService {
+public interface AccountService {
 
     /**
      * 通过主键查询数据
@@ -19,33 +17,33 @@ public interface OrderService {
      * @param id 主键
      * @return 对象
      */
-    Order getById(Long id);
+    Account getById(Long id);
 
     /**
      * 通过实体不为空的属性作为筛选条件查询单个
      *
-     * @param order 条件
+     * @param account 条件
      * @return 对象
      */
-    Order getByEntity(Order order);
+    Account getByEntity(Account account);
 
     /**
      * 通过实体不为空的属性作为筛选条件查询列表
      *
-     * @param order 条件
+     * @param account 条件
      * @return 对象列表
      */
-    List<Order> listByEntity(Order order);
+    List<Account> listByEntity(Account account);
 
     /**
      * 条件分页查询
      *
-     * @param order 查询条件
+     * @param account 查询条件
      * @param page 起始标号
      * @param pageSize 查询条目
      * @return 对象列表
      */
-    PageInfo listPageByEntity(int page, int pageSize, Order order);
+    PageInfo listPageByEntity(int page, int pageSize, Account account);
 
     /**
      * 条件分页查询
@@ -62,15 +60,15 @@ public interface OrderService {
      * @param ids Id列表
      * @return 对象列表
      */
-    List<Order> listByIds(List<Long> ids);
+    List<Account> listByIds(List<Long> ids);
 
     /**
      * 插入
      *
-     * @param order 对象
+     * @param account 对象
      * @return 影响行数
      */
-    int insert(Order order);
+    int insert(Account account);
 
     /**
      * 列表插入
@@ -78,15 +76,15 @@ public interface OrderService {
      * @param list 列表对象
      * @return 影响行数
      */
-    int insertBatch(List<Order> list);
+    int insertBatch(List<Account> list);
 
     /**
      * 更新
      *
-     * @param order 对象
+     * @param account 对象
      * @return 影响行数
      */
-    int update(Order order);
+    int update(Account account);
 
     /**
      * 列表更新
@@ -94,7 +92,7 @@ public interface OrderService {
      * @param list 列表对象
      * @return 影响行数
      */
-    int updateBatch(List<Order> list);
+    int updateBatch(List<Account> list);
 
     /**
      * 删除
@@ -107,10 +105,10 @@ public interface OrderService {
     /**
      * 条件删除
      *
-     * @param order 对象
+     * @param account 对象
      * @return 影响行数
      */
-    int deleteByEntity(Order order);
+    int deleteByEntity(Account account);
 
     /**
      * 主键列表删除
@@ -130,8 +128,8 @@ public interface OrderService {
     /**
      * 条件查询数目
      *
-     * @param order 对象
+     * @param account 对象
      * @return 影响行数
      */
-    int countByEntity(Order order);
+    int countByEntity(Account account);
 }

@@ -10,8 +10,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ProviderStorageNacosSeataApplication {
+public class ProviderStorageSeataApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProviderStorageNacosSeataApplication.class, args);
+        SpringApplication.run(ProviderStorageSeataApplication.class, args);
     }
 }

@@ -5,7 +5,7 @@
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1:3306/seata_storage</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/seata_account</jdbc-url>
     </data-source>
   </component>
 </project>

@@ -2,7 +2,7 @@
   "name" : "TbOrder",
   "preName" : "",
   "comment" : "订单",
-  "templateGroupName" : "luna-easycode-swagger",
+  "templateGroupName" : "luna-easycode-swagger-feign",
   "fullColumn" : [ {
     "name" : "id",
     "comment" : null,

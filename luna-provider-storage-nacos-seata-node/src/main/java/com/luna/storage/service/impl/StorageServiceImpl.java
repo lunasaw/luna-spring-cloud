@@ -1,8 +1,8 @@
 package com.luna.storage.service.impl;
 
+import com.luna.storage.entity.Storage;
 import com.luna.storage.mapper.StorageMapper;
 import com.luna.storage.service.StorageService;
-import com.luna.storage.entity.Storage;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import com.github.pagehelper.PageHelper;
@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * @Author: luna
- * @CreateTime: 2021-02-05 01:40:07
+ * @CreateTime: 2021-02-05 12:04:27
  */
 @Service
 public class StorageServiceImpl implements StorageService {
@@ -56,6 +56,7 @@ public class StorageServiceImpl implements StorageService {
 
     @Override
     public int insert(Storage storage) {
+        Date date = new Date();
         return storageMapper.insert(storage);
     }
 

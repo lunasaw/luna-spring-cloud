@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.luna.account.mapper.AccountMapper">
+
+    <resultMap type="com.luna.account.entity.Account" id="AccountResultMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="total" column="total" jdbcType="NUMERIC"/>
+        <result property="use" column="use" jdbcType="NUMERIC"/>
+        <result property="residue" column="residue" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <sql id="table_field">
+      id, user_id, total, use, residue      
+    </sql>
+
+    <!--通过Id查询单个-->
+    <select id="getById" resultMap="AccountResultMap" parameterType="java.lang.Long">
+        select
+        <include refid="table_field"/>
+        from tb_account
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+
+    <!--通过实体不为空的属性作为筛选条件查询列表-->
+    <select id="listByEntity" resultMap="AccountResultMap" parameterType="com.luna.account.entity.Account">
+        select
+        <include refid="table_field"/>
+        from tb_account
+        <where>
+            <if test="id != null">
+                and id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId,jdbcType=INTEGER}
+            </if>
+            <if test="total != null">
+                and total = #{total,jdbcType=NUMERIC}
+            </if>
+            <if test="use != null">
+                and use = #{use,jdbcType=NUMERIC}
+            </if>
+            <if test="residue != null">
+                and residue = #{residue,jdbcType=NUMERIC}
+            </if>
+        </where>
+    </select>
+
+    <!--通过实体不为空的属性作为筛选条件查询单个-->
+    <select id="getByEntity" resultMap="AccountResultMap" parameterType="com.luna.account.entity.Account">
+        select
+        <include refid="table_field"/>
+        from tb_account
+        <where>
+            <if test="id != null">
+                and id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId,jdbcType=INTEGER}
+            </if>
+            <if test="total != null">
+                and total = #{total,jdbcType=NUMERIC}
+            </if>
+            <if test="use != null">
+                and use = #{use,jdbcType=NUMERIC}
+            </if>
+            <if test="residue != null">
+                and residue = #{residue,jdbcType=NUMERIC}
+            </if>
+        </where>
+    </select>
+
+    <!--通过Id列表作为筛选条件查询列表，列表长度不为0-->
+    <select id="listByIds" resultMap="AccountResultMap" parameterType="list">
+        select
+        <include refid="table_field"/>
+        from tb_account
+        where id in
+        <foreach item="item" collection="list" separator="," open="(" close=")" index="index">
+            #{item}
+        </foreach>
+    </select>
+
+    <!--新增实体属性不为null的列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true" parameterType="com.luna.account.entity.Account">
+        insert into tb_account
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="total != null">
+                total,
+            </if>
+            <if test="use != null">
+                use,
+            </if>
+            <if test="residue != null">
+                residue,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="total != null">
+                #{total,jdbcType=NUMERIC},
+            </if>
+            <if test="use != null">
+                #{use,jdbcType=NUMERIC},
+            </if>
+            <if test="residue != null">
+                #{residue,jdbcType=NUMERIC},
+            </if>
+        </trim>
+    </insert>
+
+    <!--批量新增所有列，列表长度不能为0，且列表id统一为null或者统一不为null-->
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true" parameterType="list">
+        insert into tb_account
+        (id, user_id, total, use, residue)
+        values
+        <foreach item="item" collection="list" separator="," open="" close="" index="index">
+            (#{item.id,jdbcType=INTEGER}, #{item.userId,jdbcType=INTEGER}, #{item.total,jdbcType=NUMERIC},
+            #{item.use,jdbcType=NUMERIC}, #{item.residue,jdbcType=NUMERIC})
+        </foreach>
+    </insert>
+
+    <!--通过主键修改实体属性不为null的列-->
+    <update id="update" parameterType="com.luna.account.entity.Account">
+        update tb_account
+        <set>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="total != null">
+                total = #{total,jdbcType=NUMERIC},
+            </if>
+            <if test="use != null">
+                use = #{use,jdbcType=NUMERIC},
+            </if>
+            <if test="residue != null">
+                residue = #{residue,jdbcType=NUMERIC},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <!--通过表字段修改实体属性不为null的列-->
+    <update id="updateByField">
+        update tb_account
+        <set>
+            <if test="where.userId == null and set.userId != null">
+                user_id = #{set.userId,jdbcType=INTEGER},
+            </if>
+            <if test="where.total == null and set.total != null">
+                total = #{set.total,jdbcType=NUMERIC},
+            </if>
+            <if test="where.use == null and set.use != null">
+                use = #{set.use,jdbcType=NUMERIC},
+            </if>
+            <if test="where.residue == null and set.residue != null">
+                residue = #{set.residue,jdbcType=NUMERIC},
+            </if>
+        </set>
+        <where>
+            <if test="where.id != null">
+                and id = #{where.id,jdbcType=INTEGER}
+            </if>
+            <if test="where.userId != null">
+                and user_id = #{where.userId,jdbcType=INTEGER}
+            </if>
+            <if test="where.total != null">
+                and total = #{where.total,jdbcType=NUMERIC}
+            </if>
+            <if test="where.use != null">
+                and use = #{where.use,jdbcType=NUMERIC}
+            </if>
+            <if test="where.residue != null">
+                and residue = #{where.residue,jdbcType=NUMERIC}
+            </if>
+        </where>
+    </update>
+
+    <!--通过主键修改实体列表，列表长度不能为0，注意：当实体属性为null时，对应的列也会别更新为null-->
+    <update id="updateBatch" parameterType="list">
+        update tb_account
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="user_id = case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.userId}
+                </foreach>
+            </trim>
+            <trim prefix="total = case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.total}
+                </foreach>
+            </trim>
+            <trim prefix="use = case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.use}
+                </foreach>
+            </trim>
+            <trim prefix="residue = case" suffix="end,">
+                <foreach collection="list" item="item" index="index">
+                    when id = #{item.id} then #{item.residue}
+                </foreach>
+            </trim>
+        </trim>
+        where id in
+        <foreach collection="list" index="index" item="item" separator="," open="(" close=")">
+            #{item.id,jdbcType=INTEGER}
+        </foreach>
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById" parameterType="java.lang.Long">
+        delete from tb_account where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <!--通过实体非空属性删除-->
+    <delete id="deleteByEntity" parameterType="com.luna.account.entity.Account">
+        delete from tb_account
+        <where>
+            <if test="userId != null">
+                and user_id = #{userId,jdbcType=INTEGER}
+            </if>
+            <if test="total != null">
+                and total = #{total,jdbcType=NUMERIC}
+            </if>
+            <if test="use != null">
+                and use = #{use,jdbcType=NUMERIC}
+            </if>
+            <if test="residue != null">
+                and residue = #{residue,jdbcType=NUMERIC}
+            </if>
+        </where>
+    </delete>
+
+    <!--通过主键列表删除，列表长度不能为0-->
+    <delete id="deleteByIds" parameterType="list">
+        delete from tb_account where id in
+        <foreach item="item" collection="list" separator="," open="(" close=")" index="index">
+            #{item}
+        </foreach>
+    </delete>
+
+    <select id="countAll" resultType="int">
+        select count(id) from tb_account
+    </select>
+
+    <select id="countByEntity" parameterType="com.luna.account.entity.Account" resultType="int">
+        select count(id) from tb_account
+        <where>
+            <if test="id != null">
+                and id = #{id,jdbcType=INTEGER}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId,jdbcType=INTEGER}
+            </if>
+            <if test="total != null">
+                and total = #{total,jdbcType=NUMERIC}
+            </if>
+            <if test="use != null">
+                and use = #{use,jdbcType=NUMERIC}
+            </if>
+            <if test="residue != null">
+                and residue = #{residue,jdbcType=NUMERIC}
+            </if>
+        </where>
+    </select>
+</mapper>

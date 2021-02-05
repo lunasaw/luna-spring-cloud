@@ -1,10 +1,17 @@
 {
-  "name" : "TbStorage",
+  "name" : "TbAccount",
   "preName" : "",
-  "comment" : "库存",
+  "comment" : null,
   "templateGroupName" : "luna-easycode-swagger-feign",
   "fullColumn" : [ {
     "name" : "id",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "userId",
     "comment" : null,
     "type" : null,
     "shortType" : null,
@@ -18,14 +25,7 @@
     "custom" : false,
     "ext" : { }
   }, {
-    "name" : "productId",
-    "comment" : null,
-    "type" : null,
-    "shortType" : null,
-    "custom" : false,
-    "ext" : { }
-  }, {
-    "name" : "used",
+    "name" : "use",
     "comment" : null,
     "type" : null,
     "shortType" : null,
@@ -41,7 +41,7 @@
   } ],
   "pkColumn" : null,
   "otherColumn" : null,
-  "savePackageName" : "com.luna.storage",
-  "savePath" : "./luna-provider-storage-nacos-seata-node/src/main/java/com/luna/storage",
-  "saveModelName" : "luna-provider-storage-nacos-seata-node"
+  "savePackageName" : "com.luna.account",
+  "savePath" : "./luna-provider-account-nacos-seata-node/src/main/java/com/luna/account",
+  "saveModelName" : "luna-provider-account-nacos-seata-node"
 }

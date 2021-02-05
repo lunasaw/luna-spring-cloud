@@ -1,4 +1,4 @@
-package com.luna.storage.entity;
+package com.luna.commons.entities;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

@@ -1,20 +1,26 @@
 server:
-  port: 9001
+  port: 9103
   servlet:
-    context-path: /provider-payment
+    context-path: /provider-account
 spring:
+  profiles:
+    active: dev
   application:
-    name: luna-provider-payment
+    name: luna-provider-account
   cloud:
+    alibaba:
+      seata:
+        # 自定义事务组，需要和当时在 seata/conf/file.conf 中的一致
+        tx-service-group: my_test_tx_group
     nacos:
       discovery:
-        server-addr: 192.168.1.100:8848
+        server-addr: f.xicc.cc:23403
 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver              # mysql驱动包
-    url: jdbc:mysql://127.0.0.1:3306/luna-cloud?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
-    username: root
+    url: jdbc:mysql://127.0.0.1:3306/seata_account?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: luna
     password:
 
 mybatis:

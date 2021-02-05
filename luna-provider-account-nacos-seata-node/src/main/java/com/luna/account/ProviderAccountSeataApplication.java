@@ -1,4 +1,4 @@
-package com.luna.payment;
+package com.luna.account;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,8 +10,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ProviderNacosApplicationNodeOne {
+public class ProviderAccountSeataApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProviderNacosApplicationNodeOne.class, args);
+        SpringApplication.run(ProviderAccountSeataApplication.class, args);
     }
 }

@@ -1,19 +1,19 @@
-package com.luna.order.entity;
+package com.luna.commons.entities;
+
+import java.io.Serializable;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-
-import java.io.Serializable;
 
 /**
  * 订单(Order)实体类
  *
  * @author luna
- * @since 2021-02-05 12:11:51
+ * @since 2021-02-05 00:12:20
  */
 @ApiModel("订单实体类")
 public class Order implements Serializable {
-    private static final long serialVersionUID = -42346140520328999L;
+    private static final long serialVersionUID = 169551432339480360L;
     /**
      * 订单编号
      */

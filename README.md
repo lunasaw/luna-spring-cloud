@@ -17,6 +17,10 @@ isczy.tk luna-spring-cloud
 - luna-provider-nacos-node-I:9001 nacos client 
 - luna-provider-nacos-node-II:9002 nacos client 
 - luna-provider-nacos-sentinel-node:9003 nacos client sentinel
+- luna-provider-nacos-order-seata-node:9101 nacos client seata openfeign
+- luna-provider-nacos-storage-seata-node:9102 nacos client seata openfeign
+- luna-provider-nacos-account-seata-node:9103 nacos client seata openfeign
+
 
 ### consumer
 - luna-consumer-eureka-node-I:8006 eureka client restTemplate
@@ -44,6 +48,7 @@ isczy.tk luna-spring-cloud
 - luna-cloud-config-bus-server:7021  eureka client rabbitmq
 - luna-cloud-config-bus-client-node-I:7022 eureka client rabbitmq
 - luna-cloud-config-bus-client-node-II:7023 eureka client rabbitmq
+
 
 ### nacos config
 - luna-cloud-config-nacos-server:9011 nacos client 
