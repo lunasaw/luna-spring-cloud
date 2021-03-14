@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>luna-cloud-config-bus-client-node-I</artifactId>
+    <artifactId>luna-cloud-config-bus-client-node-II</artifactId>
 
     <dependencies>
         <!-- 添加rabbitMQ的消息总线支持包 -->

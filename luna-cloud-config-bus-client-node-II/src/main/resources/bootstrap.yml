@@ -1,5 +1,5 @@
 server:
-  port: 7023
+  port: 7022
   servlet:
     context-path: /config-client
 
@@ -23,7 +23,7 @@ spring:
 
 eureka:
   instance:
-    instance-id: luna-cloud-config-client-node-II
+    instance-id: luna-cloud-config-client-node-I
     # 访问路径IP显示
     prefer-ip-address: true
   client:
